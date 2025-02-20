@@ -1,0 +1,13 @@
+/* Remove default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the full-page background image */
+body {
+  height: 100vh;
+  background: url('sglandingpage.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
