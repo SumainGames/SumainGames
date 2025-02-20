@@ -1,36 +1,56 @@
-/* Reset margin and padding to ensure full control */
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body and html settings */
 html, body {
-    margin: 0;
-    padding: 0;
     height: 100%;
-    background-color: black;  /* Black background */
-    overflow: hidden;  /* Prevent scrolling and unwanted whitespace */
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    overflow: hidden; /* Prevent scrolling */
 }
 
-/* Ensure image is full-width and full-height, without any overflow */
-img {
-    width: 100%;  /* Image takes up the full width */
-    height: 100vh;  /* Image takes up the full viewport height */
-    object-fit: cover;  /* Image will cover the whole area and may crop to fit */
-    display: block;  /* Prevent any unwanted space below the image */
+/* Full page background image */
+body {
+    background-image: url('sglandingpage.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-/* Make sure container takes full height of the screen */
+/* Container to center everything */
 .container {
-    margin: 0;
-    padding: 0;
-    height: 100%;  /* Full height container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
-/* Optional: If you want to ensure that no extra white space appears on mobile */
-@media only screen and (max-width: 768px) {
-    html, body {
-        height: 100%;
-    }
+/* Media Queries for responsive design */
 
-    img {
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;  /* Keeps the image covering the entire screen */
+/* For small mobile devices */
+@media only screen and (max-width: 480px) {
+    body {
+        background-size: contain; /* Adjust image size on small devices */
+    }
+}
+
+/* For tablets and larger mobile devices */
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: contain;
+    }
+}
+
+/* For larger desktops */
+@media only screen and (min-width: 1025px) {
+    body {
+        background-size: cover; /* Full-size background on larger screens */
     }
 }
