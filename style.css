@@ -1,58 +1,36 @@
-/* Reset default styles */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-/* Make images responsive */
-.responsive-image {
-  width: 100%;  /* Makes the image width adapt to the screen size */
-  height: auto; /* Keeps the aspect ratio intact */
-  display: block; /* Removes any unnecessary spaces below the image */
-  object-fit: cover; /* Ensures image covers the available space without stretching */
-}
-
-/* Ensure there’s no horizontal scrolling on small devices */
-body {
-  overflow-x: hidden;
-}
-/* Reset default styles */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-/* Make images responsive */
-.responsive-image {
-  width: 100%;  /* Makes the image width adapt to the screen size */
-  height: auto; /* Keeps the aspect ratio intact */
-  display: block; /* Removes any unnecessary spaces below the image */
-  object-fit: cover; /* Ensures image covers the available space without stretching */
-}
-
-/* Ensure there’s no horizontal scrolling on small devices */
-body {
-  overflow-x: hidden;
-}
-/* Ensure no extra space or margin */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;  /* Ensure body takes the full height */
-    background-color: black;  /* Set black background */
-}
-
-img {
-    width: 100%;
-    height: auto;
-    display: block; /* Removes any extra spacing below the image */
-}
-
-/* Optional: If you want to remove additional space around the image's container */
-.container {
+/* Reset margin and padding to ensure full control */
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: black;  /* Black background */
+    overflow: hidden;  /* Prevent scrolling and unwanted whitespace */
+}
+
+/* Ensure image is full-width and full-height, without any overflow */
+img {
+    width: 100%;  /* Image takes up the full width */
+    height: 100vh;  /* Image takes up the full viewport height */
+    object-fit: cover;  /* Image will cover the whole area and may crop to fit */
+    display: block;  /* Prevent any unwanted space below the image */
+}
+
+/* Make sure container takes full height of the screen */
+.container {
+    margin: 0;
+    padding: 0;
+    height: 100%;  /* Full height container */
+}
+
+/* Optional: If you want to ensure that no extra white space appears on mobile */
+@media only screen and (max-width: 768px) {
+    html, body {
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;  /* Keeps the image covering the entire screen */
+    }
 }
