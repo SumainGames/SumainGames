@@ -17,3 +17,42 @@ body, html {
 body {
   overflow-x: hidden;
 }
+/* Reset default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Make images responsive */
+.responsive-image {
+  width: 100%;  /* Makes the image width adapt to the screen size */
+  height: auto; /* Keeps the aspect ratio intact */
+  display: block; /* Removes any unnecessary spaces below the image */
+  object-fit: cover; /* Ensures image covers the available space without stretching */
+}
+
+/* Ensure there’s no horizontal scrolling on small devices */
+body {
+  overflow-x: hidden;
+}
+/* Ensure no extra space or margin */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;  /* Ensure body takes the full height */
+    background-color: black;  /* Set black background */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes any extra spacing below the image */
+}
+
+/* Optional: If you want to remove additional space around the image's container */
+.container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
