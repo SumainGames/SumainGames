@@ -10,7 +10,7 @@ html, body {
     height: 100%;
     width: 100%;
     background-color: black; /* Black background around the image */
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     overflow-y: auto; /* Allow vertical scrolling */
 }
 
@@ -25,7 +25,7 @@ html, body {
 
 /* Image scaling */
 .responsive-image {
-    width: 100%;  /* Set image width to 100% of the viewport width */
-    height: auto;  /* Maintain the image's aspect ratio */
+    max-width: 100%;  /* Image will never exceed 100% of the viewport width */
+    height: auto;  /* Maintain aspect ratio */
     display: block; /* Ensure no space below the image */
 }
