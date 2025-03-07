@@ -1,11 +1,11 @@
-/* Reset margin, padding, and set box-sizing */
+/* Reset margins, padding, and box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and HTML take up the full height and width of the screen */
+/* Set up the body and html to cover the full screen and background to black */
 html, body {
     height: 100%;
     width: 100%;
@@ -13,32 +13,32 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow: hidden; /* Prevent any horizontal overflow */
 }
 
-/* Centering the container to hold the image */
+/* Make the container fill the entire viewport */
 .container {
+    position: relative;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Hide any overflow */
 }
 
-/* Ensures that the image is responsive and fits within the screen */
+/* Ensure the image scales down and maintains aspect ratio */
 .responsive-image {
-    width: 100%; /* Make the image take full width */
-    height: auto; /* Keep the aspect ratio */
-    max-width: 100%; /* Prevents image from overflowing */
-    object-fit: contain; /* Ensures image stays fully visible and fits the container */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Scale and maintain the image aspect ratio */
 }
 
-/* Ensures proper scaling for mobile (under 768px width) */
+/* Mobile-specific styles (when screen width is 768px or less) */
 @media (max-width: 768px) {
     .responsive-image {
-        width: 100%; /* Image should scale to fit mobile screen */
-        height: auto;
-        max-width: 100%; /* Prevents it from overflowing */
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Ensure the image fits within the viewport */
     }
 }
