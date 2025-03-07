@@ -1,45 +1,43 @@
-/* Reset all styles to ensure a clean slate */
+/* Reset everything to make sure no extra padding or margin interferes */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Ensure body and html take full height and width of viewport */
+/* Full height and width of the viewport, no overflow */
 html, body {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;  /* Black background for surrounding area */
-    overflow: hidden;  /* Prevent any overflow or scrolling */
+    background-color: black;  /* Black background for areas around the image */
+    overflow: hidden;  /* Prevent scrolling */
 }
 
-/* Container for the image */
+/* The image container takes full width and height */
 .image-container {
-    width: 100%; /* Full width of the screen */
-    height: 100%; /* Full height of the screen */
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Ensure no scrolling */
 }
 
-/* Force the image to scale and fit the width */
+/* Make sure the image fits within the window and scales to the width */
 .responsive-image {
-    width: 100vw;  /* Scale image width to full width of the viewport */
-    height: auto;   /* Maintain the image’s aspect ratio */
-    max-height: 100vh;  /* Ensure the height doesn't exceed the viewport height */
-    object-fit: contain;  /* Ensure the image fits within the container without cropping */
+    width: 100%; /* Take full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100vh; /* Prevent overflow if the image is too tall */
+    object-fit: contain; /* Scale image to fit while maintaining its aspect ratio */
 }
 
-/* Mobile scaling adjustments */
+/* Mobile-specific behavior (if you want to handle smaller screens) */
 @media (max-width: 768px) {
     .responsive-image {
-        width: 100vw;  /* Full width on mobile */
-        height: auto;   /* Maintain aspect ratio */
-        max-height: 100vh;  /* Prevent overflow on mobile */
-        object-fit: contain;
+        width: 100%; /* Scale to fit width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 100vh; /* Prevent overflow */
     }
 }
