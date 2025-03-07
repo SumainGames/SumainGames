@@ -18,27 +18,28 @@ html, body {
 
 /* Container for the image */
 .image-container {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Full width of the screen */
+    height: 100%; /* Full height of the screen */
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden; /* Ensure no scrolling */
 }
 
-/* Force the image to fit the width, scale it to fit the viewport */
+/* Force the image to scale and fit the width */
 .responsive-image {
-    width: 100vw;  /* Force the image to always take up the full width of the viewport */
+    width: 100vw;  /* Scale image width to full width of the viewport */
     height: auto;   /* Maintain the image’s aspect ratio */
     max-height: 100vh;  /* Ensure the height doesn't exceed the viewport height */
-    object-fit: contain;  /* Ensure the image keeps its aspect ratio and scales properly */
+    object-fit: contain;  /* Ensure the image fits within the container without cropping */
 }
 
-/* Media query for mobile devices */
+/* Mobile scaling adjustments */
 @media (max-width: 768px) {
     .responsive-image {
-        width: 100vw;  /* Force the image to scale with mobile width */
+        width: 100vw;  /* Full width on mobile */
         height: auto;   /* Maintain aspect ratio */
-        max-height: 100vh;  /* Ensure the image fits within mobile screen height */
+        max-height: 100vh;  /* Prevent overflow on mobile */
         object-fit: contain;
     }
 }
