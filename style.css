@@ -1,32 +1,34 @@
-/* Reset all margins, padding, and ensure box sizing */
+/* Reset margins, padding, and fix box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Full-screen black background */
+/* Make body full size and prevent horizontal scrolling */
 body, html {
     background-color: black;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden; /* No side scrolling */
-    overflow-y: auto; /* Allows vertical scrolling */
+    overflow-y: auto; /* Allows vertical scrolling if needed */
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 }
 
-/* Container to center image */
+/* Container to center the image */
 .container {
     width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-/* Image always fits width but allows scrolling for height */
+/* Ensures image scales properly */
 .responsive-image {
-    width: 100vw; /* Always fit screen width */
-    height: auto; /* Scale height automatically */
-    object-fit: contain;
+    width: 100vw;  /* Image always fits screen width */
+    max-width: 100%; /* Prevents oversize */
+    height: auto; /* Keeps aspect ratio */
+    object-fit: contain; /* Makes sure it fits within boundaries */
 }
