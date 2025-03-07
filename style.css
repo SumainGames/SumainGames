@@ -9,15 +9,15 @@
 html, body {
     height: 100%;
     width: 100%;
-    background-color: black;  /* Black background to fill empty space */
+    background-color: black;  /* Black background around image */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;  /* Prevent scrolling */
 }
 
-/* Container takes up full screen */
-.container {
+/* Wrapper to center the image properly */
+.image-wrapper {
     width: 100%;
     height: 100%;
     display: flex;
@@ -25,11 +25,11 @@ html, body {
     align-items: center;
 }
 
-/* Image styling */
+/* Image styling - Scale image responsively */
 .responsive-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Scales image while maintaining aspect ratio */
+    object-fit: contain;  /* Make sure image fits within the window without overflowing */
 }
 
 /* Mobile-specific styles (max-width 768px) */
@@ -37,6 +37,6 @@ html, body {
     .responsive-image {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Make sure image covers full screen */
+        object-fit: contain; /* Ensure image fits in mobile screens without overflow */
     }
 }
