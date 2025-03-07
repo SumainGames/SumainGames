@@ -6,9 +6,11 @@
 }
 
 /* Background color to prevent any bleeding */
-body {
+body, html {
     background-color: black;
-    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
 }
 
 /* Centering all content */
@@ -16,33 +18,34 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     height: 100vh;
-    width: 100%;
     background-color: black;
 }
 
-/* Styling for images */
+/* Make images fill the screen while maintaining aspect ratio */
 .responsive-image {
-    max-width: 100%;
-    height: auto;
+    width: 100vw;  /* Fill the width */
+    height: 100vh; /* Fill the height */
+    object-fit: contain; /* Ensures the full image is shown without being cut off */
 }
 
-/* For Desktop View */
+/* Default: Desktop version visible */
 .desktop {
     display: block;
 }
 
-/* For Mobile View */
+/* Mobile version hidden by default */
 .mobile {
     display: none;
 }
 
-/* Responsive design */
+/* Switch to mobile version on smaller screens */
 @media (max-width: 768px) {
     .desktop {
         display: none;
     }
-
+    
     .mobile {
         display: block;
     }
