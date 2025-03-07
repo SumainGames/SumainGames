@@ -5,28 +5,24 @@
     box-sizing: border-box;
 }
 
-/* Ensure full height and width for the body */
+/* Ensure full width for the body */
 html, body {
-    height: 100%;
-    width: 100%;
+    height: 100%;  /* Full height of the screen */
+    width: 100%;   /* Full width of the screen */
     background-color: black;  /* Black background around the image */
-    overflow-x: hidden;       /* Prevent horizontal scrolling */
-    overflow-y: auto;         /* Allow vertical scrolling if needed */
 }
 
-/* Container that holds the image */
+/* Container to hold the image */
 .image-container {
-    width: 100%;  /* Ensure container takes full width */
-    height: auto; /* Let height grow as needed */
+    width: 100%;  /* Make container span full width */
     display: flex;
-    justify-content: center;
-    align-items: center;  /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
 }
 
 /* Image settings for responsive width */
 .responsive-image {
-    width: 100%;         /* Ensure image fits the full width of the viewport */
-    height: auto;        /* Maintain the aspect ratio and adjust height accordingly */
-    display: block;      /* Ensure image behaves like a block element, removing space below it */
-    max-width: 100%;     /* Prevent the image from becoming wider than the viewport */
+    width: 100vw;         /* Make the image fit the full width of the viewport */
+    height: auto;         /* Let the height adjust according to the image's aspect ratio */
+    max-width: 100vw;     /* Ensure image never exceeds the viewport width */
+    display: block;       /* Remove any space below the image */
 }
