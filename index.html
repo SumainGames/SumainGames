@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sumain Games</title>
-
-    <!-- SEO and Social Media Meta Tags (Thumbnail/Preview for links) -->
-    <meta property="og:title" content="Sumain Games">
-    <meta property="og:description" content="The best games created by Sumain Games.">
-    <meta property="og:image" content="https://www.sumaingames.com/sglandingpage.jpg">
-    <meta property="og:url" content="https://www.sumaingames.com">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sumain Games">
-    <meta name="twitter:description" content="The best games created by Sumain Games.">
-    <meta name="twitter:image" content="https://www.sumaingames.com/sglandingpage.jpg">
-
-    <!-- Favicon (optional) -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Link to CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="container">
-        <!-- Background image here, no other content currently -->
+        <picture>
+            <!-- Desktop Image -->
+            <source srcset="images/SG Website.jpg" media="(min-width: 768px)">
+            <!-- Mobile Image -->
+            <img src="images/SG Web-Phone-format.jpg" alt="Sumain Games Website">
+        </picture>
+
+        <!-- Social & Kickstarter Buttons -->
+        <div class="buttons">
+            <a href="https://facebook.com/YOURPAGE" target="_blank" class="social">Facebook</a>
+            <a href="https://twitter.com/YOURPAGE" target="_blank" class="social">Twitter</a>
+            <a href="https://instagram.com/YOURPAGE" target="_blank" class="social">Instagram</a>
+            <a href="https://www.kickstarter.com/YOURPROJECT" target="_blank" class="kickstarter">Support Us</a>
+        </div>
     </div>
+
 </body>
 </html>
