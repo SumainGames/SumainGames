@@ -1,22 +1,22 @@
-/* Reset margins, padding, and box-sizing for a clean layout */
+/* Reset all styles to ensure a clean slate */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Make sure body takes up the full height and width */
+/* Ensure body and html take full height and width of viewport */
 html, body {
     height: 100%;
     width: 100%;
-    background-color: black;  /* Black background for the surrounding area */
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;  /* No scrollbars */
+    background-color: black;  /* Black background for surrounding area */
+    overflow: hidden;  /* Prevent any overflow or scrolling */
 }
 
-/* Container that holds the image */
+/* Container for the image */
 .image-container {
     width: 100%;
     height: 100%;
@@ -25,56 +25,20 @@ html, body {
     align-items: center;
 }
 
-/* Ensure the image is responsive and scales properly */
+/* Force the image to fit the width, scale it to fit the viewport */
 .responsive-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;  /* Scales image while keeping its aspect ratio */
+    width: 100vw;  /* Force the image to always take up the full width of the viewport */
+    height: auto;   /* Maintain the image’s aspect ratio */
+    max-height: 100vh;  /* Ensure the height doesn't exceed the viewport height */
+    object-fit: contain;  /* Ensure the image keeps its aspect ratio and scales properly */
 }
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
     .responsive-image {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;  /* Ensures the image scales properly for mobile */
-    }
-}
-/* Ensure that the body and image-container always take full height and width */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
-/* Fullscreen scaling */
-.image-container {
-    position: relative;   /* Makes the container flexible for scaling */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;  /* No scrolling */
-}
-
-/* Add scaling for larger screens */
-@media (min-width: 769px) {
-    .responsive-image {
-        width: 100%;
-        height: auto;  /* Keeps the aspect ratio */
-        max-height: 100%;  /* Prevents image from stretching beyond the viewport */
-        object-fit: contain;
-    }
-}
-
-/* Mobile scaling adjustments */
-@media (max-width: 768px) {
-    .responsive-image {
-        width: 100%;
-        height: auto;
-        max-height: 100%;  /* Ensures image fits mobile screens properly */
+        width: 100vw;  /* Force the image to scale with mobile width */
+        height: auto;   /* Maintain aspect ratio */
+        max-height: 100vh;  /* Ensure the image fits within mobile screen height */
         object-fit: contain;
     }
 }
