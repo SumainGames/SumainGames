@@ -5,25 +5,25 @@
     box-sizing: border-box;
 }
 
-/* Set up the body and html to cover the full screen and background to black */
+/* Ensure body and html cover the entire screen */
 html, body {
     height: 100%;
     width: 100%;
-    background-color: black; /* Set background to black */
+    background-color: black; /* Black background for the rest of the space */
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Prevent any horizontal overflow */
+    overflow: hidden; /* Prevent horizontal overflow */
 }
 
-/* Make the container fill the entire viewport */
+/* Make the container fill the viewport */
 .container {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-/* Ensure the image scales down and maintains aspect ratio */
+/* Responsive image styling */
 .responsive-image {
     position: absolute;
     top: 50%;
@@ -31,14 +31,14 @@ html, body {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Scale and maintain the image aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire container */
 }
 
-/* Mobile-specific styles (when screen width is 768px or less) */
+/* Mobile-specific styles (When screen width is 768px or less) */
 @media (max-width: 768px) {
     .responsive-image {
         width: 100%;
         height: 100%;
-        object-fit: contain; /* Ensure the image fits within the viewport */
+        object-fit: cover; /* Ensure the image scales to cover the full space on mobile */
     }
 }
