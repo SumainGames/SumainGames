@@ -1,51 +1,49 @@
-body {
+/* Global reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background color to prevent any bleeding */
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+/* Centering all content */
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #000;
-}
-
-.container {
-    text-align: center;
-    position: relative;
-}
-
-img {
     width: 100%;
+    background-color: black;
+}
+
+/* Styling for images */
+.responsive-image {
+    max-width: 100%;
     height: auto;
-    max-width: 1200px;
 }
 
-.buttons {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 15px;
+/* For Desktop View */
+.desktop {
+    display: block;
 }
 
-.social, .kickstarter {
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: 0.3s;
+/* For Mobile View */
+.mobile {
+    display: none;
 }
 
-.social {
-    background: #1877F2; /* Facebook blue */
-    color: white;
-}
+/* Responsive design */
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
 
-.kickstarter {
-    background: #FF914D; /* Kickstarter orange */
-    color: black;
-}
-
-.social:hover, .kickstarter:hover {
-    opacity: 0.8;
+    .mobile {
+        display: block;
+    }
 }
