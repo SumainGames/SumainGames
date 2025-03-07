@@ -1,23 +1,23 @@
-/* Reset margins, padding, and box-sizing */
+/* Reset margins, padding, and box-sizing for a clean layout */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Ensure the body and html take up the entire viewport */
+/* Make sure body takes up the full height and width */
 html, body {
     height: 100%;
     width: 100%;
-    background-color: black;  /* Black background around image */
+    background-color: black;  /* Black background for the surrounding area */
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;  /* Prevent scrolling */
+    overflow: hidden;  /* No scrollbars */
 }
 
-/* Wrapper to center the image properly */
-.image-wrapper {
+/* Container that holds the image */
+.image-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -25,18 +25,18 @@ html, body {
     align-items: center;
 }
 
-/* Image styling - Scale image responsively */
+/* Ensure the image is responsive and scales properly */
 .responsive-image {
     width: 100%;
     height: 100%;
-    object-fit: contain;  /* Make sure image fits within the window without overflowing */
+    object-fit: contain;  /* Scales image while keeping its aspect ratio */
 }
 
-/* Mobile-specific styles (max-width 768px) */
+/* Media query for mobile devices */
 @media (max-width: 768px) {
     .responsive-image {
         width: 100%;
         height: 100%;
-        object-fit: contain; /* Ensure image fits in mobile screens without overflow */
+        object-fit: contain;  /* Ensures the image scales properly for mobile */
     }
 }
