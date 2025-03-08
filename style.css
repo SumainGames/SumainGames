@@ -1,31 +1,33 @@
-/* Universal reset for margins and paddings */
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Ensure the body takes full height and width */
+/* Make sure the body and html take the full height and width of the screen */
 html, body {
     height: 100%;
     width: 100%;
-    background-color: black; /* Black background around the image */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    overflow-y: auto; /* Allow vertical scrolling */
-}
-
-/* Image container that takes full width */
-.image-container {
-    width: 100%; /* Full width of the viewport */
-    height: auto; /* Height is dynamic based on image aspect ratio */
     display: flex;
-    justify-content: center; /* Horizontally center the image */
-    align-items: flex-start; /* Align image at the top of the container */
+    justify-content: center;
+    align-items: center;
+    background-color: black;  /* Fill background with black if image doesn't cover full screen */
 }
 
-/* Image scaling */
+/* Container that will hold the image */
+.image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide any overflow of the image */
+}
+
+/* Responsive Image that scales with the window */
 .responsive-image {
-    max-width: 100%;  /* Image will never exceed 100% of the viewport width */
-    height: auto;  /* Maintain aspect ratio */
-    display: block; /* Ensure no space below the image */
+    width: 100vw;        /* Take full width of the viewport */
+    height: 100vh;       /* Scale height to fit the screen */
+    object-fit: contain; /* Preserve aspect ratio */
 }
