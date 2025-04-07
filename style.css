@@ -118,3 +118,22 @@ html, body {
     line-height: 1.6;
     color: white;
 }
+@media screen and (max-width: 480px) {
+    .email-heading {
+        font-size: 14px;
+        white-space: normal; /* allow wrap if needed */
+    }
+
+    .email-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .join-button {
+        width: 100%;
+    }
+
+    .email-form-container {
+        flex-direction: column;
+    }
+}
