@@ -78,27 +78,27 @@ html, body {
     font-size: 25px; /* Increase font size by 15% */
     border: 2px solid #ddd;
     border-radius: 5px;
-    margin-right: 15px; /* Add some space between input and button */
-    width: 70%; /* Adjust width to 70% */
+    margin-right: 10px; /* Add some space between input and button */
+    width: 65%; /* Adjust width to 65% */
     height: 50px; /* Set height to match the button */
 }
 
-/* Join button */
+/* Join button (brighter green) */
 .join-button {
     padding: 15px 30px; /* Increase padding for button */
     font-size: 25px; /* Increase font size by 15% */
-    background-color: green;
+    background-color: #28a745; /* Brighter green */
     border: none;
     color: white;
     border-radius: 5px;
     cursor: pointer;
     height: 50px; /* Match height of the input box */
-    width: 25%; /* Button takes 25% width */
+    width: 30%; /* Button width at 30% to sit beside the input box */
 }
 
 /* Join button hover effect */
 .join-button:hover {
-    background-color: darkgreen;
+    background-color: #218838; /* Darker green for hover effect */
 }
 
 /* Content Section */
