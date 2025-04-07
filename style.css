@@ -39,7 +39,7 @@ html, body {
 .email-strip {
     background-color: black;
     color: white;
-    padding: 15px 0; /* Increase padding for larger form */
+    padding: 20px 0; /* Increase padding for larger form */
     text-align: center;
     position: fixed;
     top: 0;
@@ -58,7 +58,7 @@ html, body {
 /* Heading style in email strip */
 .email-heading {
     font-family: Arial, sans-serif;
-    font-size: 29px; /* Increase font size */
+    font-size: 33px; /* Increase font size by 15% */
     font-weight: bold;
     margin-bottom: 15px; /* Increase space between heading and form */
 }
@@ -69,29 +69,31 @@ html, body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 10px; /* Slight margin between heading and form */
 }
 
 /* Email input box */
 .email-input {
     padding: 15px; /* Increase padding */
-    font-size: 22px; /* Increase font size */
+    font-size: 25px; /* Increase font size by 15% */
     border: 2px solid #ddd;
     border-radius: 5px;
     margin-right: 15px; /* Add some space between input and button */
-    width: 70%;
+    width: 70%; /* Adjust width to 70% */
     height: 50px; /* Set height to match the button */
 }
 
 /* Join button */
 .join-button {
     padding: 15px 30px; /* Increase padding for button */
-    font-size: 22px; /* Increase font size */
+    font-size: 25px; /* Increase font size by 15% */
     background-color: green;
     border: none;
     color: white;
     border-radius: 5px;
     cursor: pointer;
     height: 50px; /* Match height of the input box */
+    width: 25%; /* Button takes 25% width */
 }
 
 /* Join button hover effect */
@@ -110,7 +112,7 @@ html, body {
 
 /* Disclaimer text */
 .content p {
-    font-size: 18px; /* Slightly increase font size */
+    font-size: 20px; /* Slightly increase font size */
     line-height: 1.6;
     color: white;
 }
