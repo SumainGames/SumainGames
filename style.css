@@ -88,19 +88,60 @@ html, body {
   }
 }
 
-/* Background image settings for desktop */
+/* Responsive images */
 .image-container {
   position: relative;
   width: 100%;
-  height: 100vh; /* Ensures the image takes full screen height */
-  overflow: hidden; /* Prevents the image from spilling over */
+  height: auto;
+}
+
+.image-container img {
+  display: block;
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
 }
 
 .desktop-image {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire area */
-  z-index: -1; /
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Ensure it stays behind content */
+}
+
+/* Hide desktop image on mobile */
+@media screen and (max-width: 768px) {
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+  }
+}
+
+/* Hide mobile image on desktop */
+@media screen and (min-width: 769px) {
+  .mobile-image {
+    display: none;
+  }
+}
+
+/* Disclaimer section at the bottom */
+.disclaimer {
+  background-color: #111;
+  color: #ccc;
+  font-size: 14px;
+  padding: 20px 15px;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+}
+
+@media screen and (max-width: 768px) {
+  .disclaimer {
+    font-size: 12px;
+    padding: 15px 10px;
+  }
+}
