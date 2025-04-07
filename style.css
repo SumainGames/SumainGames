@@ -1,118 +1,103 @@
-/* Reset defaults */
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Ensure full width */
 html, body {
-    width: 100%;
-    height: 100%;
-    background-color: black; /* Black background */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
 }
 
-/* Mobile version */
+/* RESPONSIVE IMAGES */
+.background-image {
+  display: block;
+  width: 100vw;
+  height: auto;
+}
+
+/* Hide one image depending on screen */
 @media screen and (max-width: 768px) {
-    .desktop-image {
-        display: none; /* Hide desktop image */
-    }
-    .mobile-image {
-        display: block; /* Show mobile image */
-        width: 100%; /* Make mobile image full width */
-    }
+  .desktop-image {
+    display: none;
+  }
 }
-
-/* Desktop version */
 @media screen and (min-width: 769px) {
-    .mobile-image {
-        display: none; /* Hide mobile image */
-    }
-    .desktop-image {
-        display: block; /* Show desktop image */
-        width: 100%; /* Make desktop image full width */
-    }
+  .mobile-image {
+    display: none;
+  }
 }
 
-/* Email signup strip */
-.email-strip {
-    background-color: black;
-    color: white;
-    padding: 20px 0; /* Increase padding for larger form */
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    font-family: Arial, sans-serif;
+/* EMAIL SECTION */
+.email-section {
+  background-color: black;
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 2px solid #444;
 }
 
-/* Content within email signup strip */
-.email-strip-content {
-    margin: 0 auto;
-    max-width: 600px;
-}
-
-/* Heading style in email strip */
 .email-heading {
-    font-family: Arial, sans-serif;
-    font-size: 33px; /* Increase font size by 15% */
-    font-weight: bold;
-    margin-bottom: 15px; /* Increase space between heading and form */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  white-space: nowrap;
 }
 
-/* Form input and button container */
+/* FORM */
 .email-form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px; /* Slight margin between heading and form */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-/* Email input box */
 .email-input {
-    padding: 15px; /* Increase padding */
-    font-size: 25px; /* Increase font size by 15% */
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    margin-right: 15px; /* Add some space between input and button */
-    width: 70%; /* Adjust width to 70% */
-    height: 50px; /* Set height to match the button */
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 280px;
 }
 
-/* Join button */
 .join-button {
-    padding: 15px 30px; /* Increase padding for button */
-    font-size: 25px; /* Increase font size by 15% */
-    background-color: green;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    height: 50px; /* Match height of the input box */
-    width: 25%; /* Button takes 25% width */
+  padding: 12px 20px;
+  background-color: #00ff5e;
+  color: black;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 46px;
 }
 
-/* Join button hover effect */
-.join-button:hover {
-    background-color: darkgreen;
+.disclaimer {
+  color: #aaa;
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 10px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Content Section */
-.content {
-    margin-top: 120px; /* Add space to accommodate the fixed email strip */
-    color: white;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    text-align: center;
-}
+/* MOBILE FIX */
+@media screen and (max-width: 480px) {
+  .email-heading {
+    font-size: 15px;
+    white-space: normal;
+  }
 
-/* Disclaimer text */
-.content p {
-    font-size: 20px; /* Slightly increase font size */
-    line-height: 1.6;
-    color: white;
+  .email-form-container {
+    flex-direction: column;
+  }
+
+  .email-input, .join-button {
+    width: 100%;
+  }
 }
