@@ -33,54 +33,72 @@ html, body {
         display: none; /* Hide mobile image */
     }
 }
-/* Email strip styling - added safely */
+
+/* Email signup strip */
 .email-strip {
-    background-color: #000;
-    padding: 20px 10px;
-    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
     text-align: center;
-    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
+/* Content within email signup strip */
 .email-strip-content {
-    max-width: 800px;
     margin: 0 auto;
+    max-width: 600px;
 }
 
+/* Heading style in email strip */
 .email-heading {
     font-family: Arial, sans-serif;
     font-size: 20px;
     font-weight: bold;
-    color: white;
     margin-bottom: 10px;
 }
 
-.email-strip form {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
+/* Email input box */
 .email-input {
     padding: 10px;
     font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    width: 250px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 70%;
 }
 
+/* Join button */
 .join-button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 18px;
+    padding: 10px 20px;
     font-size: 16px;
-    border-radius: 4px;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
 }
 
+/* Join button hover effect */
 .join-button:hover {
-    background-color: #218838;
+    background-color: darkgreen;
+}
+
+/* Content Section */
+.content {
+    margin-top: 120px; /* Add space to accommodate the fixed email strip */
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Disclaimer text */
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
 }
