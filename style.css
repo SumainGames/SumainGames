@@ -55,16 +55,15 @@ html, body {
     max-width: 600px;
 }
 
-/* Heading style in email strip (now 50% smaller text) */
+/* Heading style in email strip */
 .email-heading {
     font-family: Arial, sans-serif;
-    font-size: 18px; /* Decrease font size further by 25% */
+    font-size: 33px; /* Increase font size by 15% */
     font-weight: bold;
-    margin-bottom: 10px; /* Increase space between heading and form */
-    white-space: nowrap; /* Prevent text wrapping to a new line */
+    margin-bottom: 15px; /* Increase space between heading and form */
 }
 
-/* Form container - make sure the elements are next to each other */
+/* Form input and button container */
 .email-form-container {
     display: flex;
     justify-content: center;
@@ -76,31 +75,30 @@ html, body {
 /* Email input box */
 .email-input {
     padding: 15px; /* Increase padding */
-    font-size: 18px; /* Adjusted font size */
+    font-size: 25px; /* Increase font size by 15% */
     border: 2px solid #ddd;
     border-radius: 5px;
-    margin-right: 10px; /* Add some space between input and button */
-    width: 60%; /* Adjust width to 60% */
+    margin-right: 15px; /* Add some space between input and button */
+    width: 70%; /* Adjust width to 70% */
     height: 50px; /* Set height to match the button */
 }
 
-/* Join button (brighter green) */
+/* Join button */
 .join-button {
     padding: 15px 30px; /* Increase padding for button */
-    font-size: 18px; /* Adjusted font size */
-    background-color: #28a745; /* Brighter green */
+    font-size: 25px; /* Increase font size by 15% */
+    background-color: green;
     border: none;
     color: white;
     border-radius: 5px;
     cursor: pointer;
     height: 50px; /* Match height of the input box */
-    width: 30%; /* Button width at 30% to sit beside the input box */
-    display: inline-block;
+    width: 25%; /* Button takes 25% width */
 }
 
 /* Join button hover effect */
 .join-button:hover {
-    background-color: #218838; /* Darker green for hover effect */
+    background-color: darkgreen;
 }
 
 /* Content Section */
