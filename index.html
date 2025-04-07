@@ -8,23 +8,27 @@
 </head>
 <body>
 
-  <!-- EMAIL FORM BANNER -->
-  <section class="email-section">
-    <div class="email-heading">Join the Launch List – Win a Free Giveaway</div>
-    <form name="launch-list" method="POST" data-netlify="true" class="email-form-container">
-      <input type="hidden" name="form-name" value="launch-list" />
-      <input type="email" name="email" class="email-input" placeholder="Enter your email" required />
-      <button type="submit" class="join-button">Join</button>
-    </form>
-    <div class="disclaimer">
-      All rewards, products, and productions associated with Cosmic Crowns are contingent upon the successful launch of our Kickstarter campaign. Supporters will be updated regularly on the campaign’s progress.
+  <!-- Email Signup Form -->
+  <div class="email-strip">
+    <div class="email-content">
+      <p class="signup-title">Join the Launch List – Win a Free Giveaway</p>
+      <form name="launchlist" method="POST" data-netlify="true" class="email-form">
+        <input type="hidden" name="form-name" value="launchlist" />
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <button type="submit">Join</button>
+      </form>
     </div>
-  </section>
+  </div>
 
-  <!-- RESPONSIVE IMAGES -->
+  <!-- Responsive Image -->
   <div class="image-container">
-    <img src="SG Website.jpg" alt="Desktop Image" class="desktop-image background-image">
-    <img src="SG Web-Phone-format.jpg" alt="Mobile Image" class="mobile-image background-image">
+    <img src="SG Website.jpg" alt="Desktop Image" class="desktop-image">
+    <img src="SG Web-Phone-format.jpg" alt="Mobile Image" class="mobile-image">
+  </div>
+
+  <!-- Disclaimer at bottom -->
+  <div class="disclaimer">
+    <p>All rewards, products, and productions associated with Cosmic Crowns are contingent upon the successful launch of our Kickstarter campaign. Supporters will be updated regularly on the campaign’s progress.</p>
   </div>
 
 </body>
