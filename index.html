@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Responsive Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cosmic Crowns</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <div class="email-strip">
-        <div class="email-strip-content">
-            <h1 class="email-heading">Join the Launch List - Win a Free Giveaway</h1>
-            <!-- Start of Form -->
-            <div class="email-form-container">
-                <!-- Email input box -->
-                <input type="email" class="email-input" placeholder="Enter your email" name="email" required>
-
-                <!-- Join button -->
-                <button class="join-button" type="submit">Join</button>
-            </div>
-        </div>
+  <!-- EMAIL FORM BANNER -->
+  <section class="email-section">
+    <div class="email-heading">Join the Launch List – Win a Free Giveaway</div>
+    <form name="launch-list" method="POST" data-netlify="true" class="email-form-container">
+      <input type="hidden" name="form-name" value="launch-list" />
+      <input type="email" name="email" class="email-input" placeholder="Enter your email" required />
+      <button type="submit" class="join-button">Join</button>
+    </form>
+    <div class="disclaimer">
+      All rewards, products, and productions associated with Cosmic Crowns are contingent upon the successful launch of our Kickstarter campaign. Supporters will be updated regularly on the campaign’s progress.
     </div>
+  </section>
 
-    <div class="content">
-        <p>All rewards, products, and productions associated with Cosmic Crowns 
-        are contingent upon the successful launch of our Kickstarter campaign. 
-        Supporters will be updated regularly on the campaign’s progress.</p>
-    </div>
+  <!-- RESPONSIVE IMAGES -->
+  <div class="image-container">
+    <img src="SG Website.jpg" alt="Desktop Image" class="desktop-image background-image">
+    <img src="SG Web-Phone-format.jpg" alt="Mobile Image" class="mobile-image background-image">
+  </div>
 
 </body>
 </html>
