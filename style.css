@@ -22,15 +22,23 @@ html, body {
 
 /* Mobile version */
 @media screen and (max-width: 768px) {
-    .desktop {
+    .desktop-image {
         display: none; /* Hide desktop image */
+    }
+    .mobile-image {
+        display: block; /* Show mobile image */
+        width: 100%; /* Make mobile image full width */
     }
 }
 
 /* Desktop version */
 @media screen and (min-width: 769px) {
-    .mobile {
+    .mobile-image {
         display: none; /* Hide mobile image */
+    }
+    .desktop-image {
+        display: block; /* Show desktop image */
+        width: 100%; /* Make desktop image full width */
     }
 }
 
@@ -45,6 +53,7 @@ html, body {
     left: 0;
     width: 100%;
     z-index: 1000;
+    font-family: Arial, sans-serif;
 }
 
 /* Content within email signup strip */
