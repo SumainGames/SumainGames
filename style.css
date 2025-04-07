@@ -10,29 +10,7 @@ html, body {
   width: 100%;
   height: 100%;
   background-color: black;
-  overflow-x: hidden;
   font-family: Arial, sans-serif;
-}
-
-/* Responsive images */
-.image-container img {
-  display: block;
-  width: 100vw;
-  height: auto;
-}
-
-/* Hide desktop image on mobile */
-@media screen and (max-width: 768px) {
-  .desktop-image {
-    display: none;
-  }
-}
-
-/* Hide mobile image on desktop */
-@media screen and (min-width: 769px) {
-  .mobile-image {
-    display: none;
-  }
 }
 
 /* Email strip styles */
@@ -40,6 +18,15 @@ html, body {
   background-color: #000;
   padding: 25px 20px;
   text-align: center;
+  width: 100%;
+}
+
+.email-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .signup-title {
@@ -47,6 +34,7 @@ html, body {
   font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .email-form {
@@ -54,6 +42,7 @@ html, body {
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .email-form input[type="email"] {
@@ -95,6 +84,27 @@ html, body {
   .email-form button {
     width: 100%;
     max-width: 300px;
+  }
+}
+
+/* Responsive images */
+.image-container img {
+  display: block;
+  width: 100vw;
+  height: auto;
+}
+
+/* Hide desktop image on mobile */
+@media screen and (max-width: 768px) {
+  .desktop-image {
+    display: none;
+  }
+}
+
+/* Hide mobile image on desktop */
+@media screen and (min-width: 769px) {
+  .mobile-image {
+    display: none;
   }
 }
 
