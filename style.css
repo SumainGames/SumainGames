@@ -55,10 +55,10 @@ html, body {
     max-width: 600px;
 }
 
-/* Heading style in email strip */
+/* Heading style in email strip (now 50% smaller text) */
 .email-heading {
     font-family: Arial, sans-serif;
-    font-size: 25px; /* Decrease font size by 25% */
+    font-size: 18px; /* Decrease font size further by 25% */
     font-weight: bold;
     margin-bottom: 10px; /* Increase space between heading and form */
     white-space: nowrap; /* Prevent text wrapping to a new line */
@@ -76,7 +76,7 @@ html, body {
 /* Email input box */
 .email-input {
     padding: 15px; /* Increase padding */
-    font-size: 20px; /* Adjusted font size */
+    font-size: 18px; /* Adjusted font size */
     border: 2px solid #ddd;
     border-radius: 5px;
     margin-right: 10px; /* Add some space between input and button */
@@ -87,7 +87,7 @@ html, body {
 /* Join button (brighter green) */
 .join-button {
     padding: 15px 30px; /* Increase padding for button */
-    font-size: 20px; /* Adjusted font size */
+    font-size: 18px; /* Adjusted font size */
     background-color: #28a745; /* Brighter green */
     border: none;
     color: white;
