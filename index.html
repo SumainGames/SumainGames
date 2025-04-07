@@ -1,35 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cosmic Crowns</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  <!-- Email Signup Form -->
-  <div class="email-strip">
-    <div class="email-content">
-      <p class="signup-title">Join the Launch List – Win a Free Giveaway</p>
-      <form name="launchlist" method="POST" data-netlify="true" class="email-form">
-        <input type="hidden" name="form-name" value="launchlist" />
-        <input type="email" name="email" placeholder="Enter your email" required />
-        <button type="submit">Join</button>
-      </form>
-    </div>
-  </div>
+/* Ensure full width */
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Black background */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: Arial, sans-serif;
+}
 
-  <!-- Responsive Image -->
-  <div class="image-container">
-    <img src="SG Website.jpg" alt="Desktop Image" class="desktop-image">
-    <img src="SG Web-Phone-format.jpg" alt="Mobile Image" class="mobile-image">
-  </div>
+/* Image settings - Always scale to fit the screen width */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
 
-  <!-- Disclaimer at bottom -->
-  <div class="disclaimer">
-    <p>All rewards, products, and productions associated with Cosmic Crowns are contingent upon the successful launch of our Kickstarter campaign. Supporters will be updated regularly on the campaign’s progress.</p>
-  </div>
+.desktop-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
-</body>
-</html>
+.mobile-image {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+/* Mobile version */
+@media screen and (max-width: 768px) {
+    .desktop-image {
+        display: none;
+    }
+    .mobile-image {
+        display: block;
+    }
+}
+
+/* Desktop version */
+@media screen and (min-width: 769px) {
+    .mobile-image {
+        display: none;
+    }
+}
+
+/* Email strip at top */
+.email-strip {
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.email-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.signup-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Email input box and join button */
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-form input {
+    padding: 10px;
+    width: 60%;
+    font-size: 1em;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.email-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Bright green */
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Disclaimer section */
+.disclaimer {
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #222;
+}
+
+/* Mobile view adjustments */
+@media screen and (max-width: 768px) {
+    .signup-title {
+        font-size: 1.2em;
+    }
+
+    .email-form input {
+        width: 70%; /* Adjust width for mobile */
+    }
+
+    .email-form button {
+        font-size: 0.9em;
+    }
+
+    .disclaimer {
+        font-size: 0.8em;
+    }
+}
