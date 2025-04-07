@@ -63,7 +63,7 @@ html, body {
     margin-bottom: 15px; /* Increase space between heading and form */
 }
 
-/* Form input and button container */
+/* Form container - make sure the elements are next to each other */
 .email-form-container {
     display: flex;
     justify-content: center;
@@ -94,6 +94,7 @@ html, body {
     cursor: pointer;
     height: 50px; /* Match height of the input box */
     width: 30%; /* Button width at 30% to sit beside the input box */
+    display: inline-block;
 }
 
 /* Join button hover effect */
