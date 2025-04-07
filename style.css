@@ -103,41 +103,4 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensures the image covers the entire area */
-  z-index: -1; /* Keeps it in the background */
-  visibility: visible; /* Makes sure the image is visible */
-}
-
-/* Mobile image settings */
-.mobile-image {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .desktop-image {
-    display: none; /* Hides the desktop image on mobile */
-  }
-
-  .mobile-image {
-    display: block; /* Shows the mobile image on mobile */
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* Disclaimer section at the bottom */
-.disclaimer {
-  background-color: #111;
-  color: #ccc;
-  font-size: 14px;
-  padding: 20px 15px;
-  text-align: center;
-  margin-top: 40px;
-  border-top: 1px solid #333;
-}
-
-@media screen and (max-width: 768px) {
-  .disclaimer {
-    font-size: 12px;
-    padding: 15px 10px;
-  }
-}
+  z-index: -1; /
