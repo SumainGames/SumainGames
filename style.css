@@ -33,3 +33,54 @@ html, body {
         display: none; /* Hide mobile image */
     }
 }
+/* Email strip styling - added safely */
+.email-strip {
+    background-color: #000;
+    padding: 20px 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+}
+
+.email-strip-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.email-heading {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.email-strip form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.email-input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    width: 250px;
+}
+
+.join-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.join-button:hover {
+    background-color: #218838;
+}
