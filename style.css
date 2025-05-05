@@ -118,11 +118,19 @@ html, body {
         font-size: 0.8em;
     }
     
-/* Add these styles to your style.css file */
+
+
+.kickstarter-section {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
 
 .video-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px; /* Large maximum width */
   margin: 0 auto;
 }
 
@@ -142,15 +150,40 @@ html, body {
   border: 0;
 }
 
-/* Optional: Additional styling for the kickstarter section */
-.kickstarter-section {
-  padding: 20px;
-  text-align: center;
+/* Desktop specific adjustments - much larger video */
+@media (min-width: 1024px) {
+  .kickstarter-section {
+    padding: 40px 20px;
+  }
+  
+  .video-container {
+    width: 100%;
+    max-width: 1200px; /* Larger for desktop */
+    min-width: 900px; /* Ensure minimum size */
+  }
+  
+  .video-wrapper {
+    margin: 0 auto;
+    max-width: 100%;
+  }
 }
 
-/* Media queries for better mobile experience */
-@media (max-width: 768px) {
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .video-container {
+    width: 90%;
+    min-width: 700px; /* Good size for medium screens */
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
   .kickstarter-section {
     padding: 10px;
+  }
+  
+  .video-container {
+    width: 100%;
+    min-width: unset; /* Remove minimum width for mobile */
   }
 }
