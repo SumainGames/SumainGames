@@ -127,9 +127,9 @@ html, body {
 .kickstarter-video {
     position: relative;
     width: 100%;
-    max-width: 100%; /* Ensure video stretches to 100% of available width */
+    max-width: 100%; /* Ensures it fills the screen width */
     margin: 0 auto;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    padding-top: 56.25%; /* Aspect ratio of 16:9 */
 }
 
 .kickstarter-video iframe {
@@ -145,7 +145,7 @@ html, body {
 .kickstarter-button {
     display: inline-block;
     width: 100%;
-    max-width: 800px;
+    max-width: 800px; /* Button's max width to match video */
     margin-top: 20px;
     padding: 25px 20px;
     font-family: Arial, sans-serif;
@@ -165,7 +165,7 @@ html, body {
     background-color: #a2e0a2; /* Slightly darker green on hover */
 }
 
-/* Responsive button on smaller screens */
+/* Responsive button for small screens */
 @media screen and (max-width: 768px) {
     .kickstarter-button {
         font-size: 20px;
