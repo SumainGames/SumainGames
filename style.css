@@ -118,3 +118,43 @@ html, body {
         font-size: 0.8em;
     }
 }
+/* Responsive Kickstarter Video */
+.kickstarter-video-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.kickstarter-video {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.kickstarter-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Kickstarter Button Styling */
+.kickstarter-button {
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 25px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    background-color: #b2f2bb; /* Soft pastel green-blue */
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
