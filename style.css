@@ -124,16 +124,22 @@ html, body {
     margin-top: 20px;
 }
 
+/* Kickstarter Video Wrapper */
+.kickstarter-video-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
 /* Kickstarter Video Embed */
 .kickstarter-video {
     width: 100%;
-    max-width: 800px;
+    max-width: 100%; /* Allow it to take full width on desktop */
     margin: 0 auto;
 }
 
 .kickstarter-video-iframe {
     width: 100%;
-    height: 450px;
+    height: 450px; /* Keep the height fixed at 450px */
 }
 
 /* Kickstarter Button Styling */
