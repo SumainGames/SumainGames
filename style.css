@@ -118,64 +118,58 @@ html, body {
         font-size: 0.8em;
     }
     
-/* Kickstarter video default for desktop */
-.kickstarter-video {
-  width: 800px;
-  max-width: 100%;
-  margin: 40px auto;
-  position: relative;
-  height: 450px; /* 16:9 aspect ratio for 800px width */
+/* Wrapper to center content */
+.kickstarter-wrapper {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 10px;
 }
 
-.kickstarter-video iframe {
+/* Desktop video size */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 ratio */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   border: none;
 }
 
-/* Button below video */
+/* Button styling */
 .kickstarter-button-wrapper {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .kickstarter-button {
-  background-color: #B2E3D0; /* Pastel green/blue */
+  display: inline-block;
+  background-color: #B2E3D0; /* pastel green/blue */
   color: black;
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 1.8rem;
   padding: 20px 40px;
-  border-radius: 10px;
+  border-radius: 12px;
   text-decoration: none;
-  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   line-height: 1.5;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .kickstarter-button:hover {
   background-color: #A0D9C0;
 }
 
-/* Mobile adjustments */
+/* Make everything fit well on small screens */
 @media screen and (max-width: 768px) {
-  .kickstarter-video {
-    width: 100%;
-    height: auto;
-    padding-bottom: 56.25%;
-  }
-
-  .kickstarter-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-  }
-
   .kickstarter-button {
     font-size: 1.4rem;
     padding: 15px 25px;
   }
 }
-
-    
