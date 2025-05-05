@@ -119,61 +119,45 @@ html, body {
     }
     
 .kickstarter-section {
-  max-width: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-/* Responsive video with fixed aspect ratio */
-.kickstarter-video {
-  position: relative;
+.video-container {
   width: 100%;
   max-width: 800px;
-  padding-top: 56.25%; /* 16:9 ratio */
-  margin-bottom: 30px;
+  margin: 0 auto;
 }
 
-.kickstarter-video iframe {
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border: none;
+  border: 0;
 }
 
-/* Button styling */
-.kickstarter-button-wrapper {
-  text-align: center;
+/* Adjust maximum width for larger screens */
+@media screen and (min-width: 1200px) {
+  .video-container {
+    max-width: 900px;
+  }
 }
 
-.kickstarter-button {
-  display: inline-block;
-  background-color: #B2E3D0; /* Pastel green/blue */
-  color: black;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1.8rem;
-  text-align: center;
-  padding: 20px 40px;
-  border-radius: 12px;
-  text-decoration: none;
-  line-height: 1.4;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-}
-
-.kickstarter-button:hover {
-  background-color: #A0D9C0;
-}
-
-/* Mobile adjustments */
+/* Adjust padding for mobile screens */
 @media screen and (max-width: 768px) {
-  .kickstarter-button {
-    font-size: 1.4rem;
-    padding: 15px 25px;
+  .kickstarter-section {
+    padding: 20px 10px;
   }
 }
 
