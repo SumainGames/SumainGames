@@ -127,7 +127,7 @@ html, body {
 .kickstarter-video {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 100%; /* Ensure video stretches to 100% of available width */
     margin: 0 auto;
     padding-top: 56.25%; /* 16:9 Aspect Ratio */
 }
@@ -157,6 +157,12 @@ html, body {
     text-decoration: none;
     line-height: 1.4;
     box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.kickstarter-button:hover {
+    background-color: #a2e0a2; /* Slightly darker green on hover */
 }
 
 /* Responsive button on smaller screens */
