@@ -120,15 +120,17 @@ html, body {
     
 .kickstarter-section {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
 }
 
 .video-container {
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 1000px; /* Increased max-width for desktop */
+  margin: 0 auto 30px auto; /* Added bottom margin */
 }
 
 .video-wrapper {
@@ -147,17 +149,48 @@ html, body {
   border: 0;
 }
 
-/* Adjust maximum width for larger screens */
+/* Button styling */
+.kickstarter-button-wrapper {
+  text-align: center;
+  margin-top: 30px; /* Added margin top */
+  width: 100%;
+}
+
+.kickstarter-button {
+  display: inline-block;
+  background-color: #B2E3D0;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 20px 40px;
+  border-radius: 12px;
+  text-decoration: none;
+  line-height: 1.4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.kickstarter-button:hover {
+  background-color: #A0D9C0;
+}
+
+/* Desktop adjustments */
 @media screen and (min-width: 1200px) {
   .video-container {
-    max-width: 900px;
+    max-width: 1000px; /* Larger size for desktop */
   }
 }
 
-/* Adjust padding for mobile screens */
+/* Mobile adjustments */
 @media screen and (max-width: 768px) {
   .kickstarter-section {
     padding: 20px 10px;
   }
+  
+  .kickstarter-button {
+    font-size: 1.4rem;
+    padding: 15px 25px;
+  }
 }
-
