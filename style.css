@@ -118,22 +118,24 @@ html, body {
         font-size: 0.8em;
     }
     
-/* Wrapper to center content */
-.kickstarter-wrapper {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 0 10px;
+.kickstarter-section {
+  max-width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Desktop video size */
-.video-container {
+/* Responsive video with fixed aspect ratio */
+.kickstarter-video {
   position: relative;
   width: 100%;
+  max-width: 800px;
   padding-top: 56.25%; /* 16:9 ratio */
-  overflow: hidden;
+  margin-bottom: 30px;
 }
 
-.video-container iframe {
+.kickstarter-video iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -145,31 +147,33 @@ html, body {
 /* Button styling */
 .kickstarter-button-wrapper {
   text-align: center;
-  margin-top: 30px;
 }
 
 .kickstarter-button {
   display: inline-block;
-  background-color: #B2E3D0; /* pastel green/blue */
+  background-color: #B2E3D0; /* Pastel green/blue */
   color: black;
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 1.8rem;
+  text-align: center;
   padding: 20px 40px;
   border-radius: 12px;
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  line-height: 1.5;
+  line-height: 1.4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
 }
 
 .kickstarter-button:hover {
   background-color: #A0D9C0;
 }
 
-/* Make everything fit well on small screens */
+/* Mobile adjustments */
 @media screen and (max-width: 768px) {
   .kickstarter-button {
     font-size: 1.4rem;
     padding: 15px 25px;
   }
 }
+
