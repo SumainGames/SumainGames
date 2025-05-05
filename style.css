@@ -120,23 +120,17 @@ html, body {
     
 /* Kickstarter Video Wrapper */
 .kickstarter-video-wrapper {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Kickstarter Video Wrapper */
-.kickstarter-video-wrapper {
-    text-align: center;
-    margin-top: 20px;
     width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
-/* Make the video responsive (16:9 ratio) */
+/* Ensure the video is fully responsive */
 .kickstarter-video {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* This maintains a 16:9 ratio */
-    overflow: hidden;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
     margin-bottom: 20px;
 }
 
@@ -166,7 +160,7 @@ html, body {
     background-color: #A1D0A1; /* Slightly darker green on hover */
 }
 
-/* Mobile responsive styling for the button */
+/* Responsive for smaller screens */
 @media screen and (max-width: 768px) {
     .kickstarter-button {
         font-size: 1em;
@@ -183,10 +177,8 @@ html, body {
     .kickstarter-video iframe {
         height: 560px; /* Full height for desktop */
     }
-
+    
     .kickstarter-button {
         font-size: 1.2em;
     }
 }
-
-
