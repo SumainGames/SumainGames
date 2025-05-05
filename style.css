@@ -136,9 +136,15 @@ html, body {
   border: none;
 }
 
+.button-container {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 .kickstarter-button {
-  display: inline-block;
-  background-color: #A8E6CF; /* pastel green */
+  background-color: #B2F2BB; /* pastel green */
   color: black;
   font-family: Arial, sans-serif;
   font-weight: bold;
@@ -146,8 +152,9 @@ html, body {
   text-align: center;
   text-decoration: none;
   padding: 15px 25px;
-  margin-top: 20px;
   border-radius: 10px;
   width: 100%;
+  max-width: 800px;
   box-sizing: border-box;
+  display: inline-block;
 }
