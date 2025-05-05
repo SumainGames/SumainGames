@@ -117,7 +117,7 @@ html, body {
     .disclaimer {
         font-size: 0.8em;
     }
-}
+    
 /* Responsive Kickstarter Video */
 .kickstarter-video-wrapper {
     text-align: center;
@@ -157,4 +157,12 @@ html, body {
     text-decoration: none;
     line-height: 1.4;
     box-sizing: border-box;
+}
+
+/* Responsive button on smaller screens */
+@media screen and (max-width: 768px) {
+    .kickstarter-button {
+        font-size: 20px;
+        padding: 20px 15px;
+    }
 }
