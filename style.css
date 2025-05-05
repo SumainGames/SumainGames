@@ -120,70 +120,54 @@ html, body {
     
 
 
-.kickstarter-section {
-  width: 100%;
-  padding: 20px;
-  margin: 0 auto;
-  text-align: center;
-  box-sizing: border-box;
-}
+/* Kickstarter video section styling */
+    .kickstarter-video-section {
+        width: 100%;
+        padding: 20px 0;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-.video-container {
-  width: 100%;
-  max-width: 1200px; /* Large maximum width */
-  margin: 0 auto;
-}
+    /* Mobile iframe (hidden on desktop) */
+    .mobile-video-container {
+        display: none; /* Hidden by default */
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+    }
 
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-}
+    /* Desktop iframe (hidden on mobile) */
+    .desktop-video-container {
+        display: block; /* Shown by default */
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
 
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
+    /* Video wrapper for aspect ratio */
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+    }
 
-/* Desktop specific adjustments - much larger video */
-@media (min-width: 1024px) {
-  .kickstarter-section {
-    padding: 40px 20px;
-  }
-  
-  .video-container {
-    width: 100%;
-    max-width: 1200px; /* Larger for desktop */
-    min-width: 900px; /* Ensure minimum size */
-  }
-  
-  .video-wrapper {
-    margin: 0 auto;
-    max-width: 100%;
-  }
-}
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
 
-/* Medium screens */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .video-container {
-    width: 90%;
-    min-width: 700px; /* Good size for medium screens */
-  }
-}
-
-/* Mobile adjustments */
-@media (max-width: 767px) {
-  .kickstarter-section {
-    padding: 10px;
-  }
-  
-  .video-container {
-    width: 100%;
-    min-width: unset; /* Remove minimum width for mobile */
-  }
-}
+    /* Responsive behavior */
+    @media (max-width: 767px) {
+        .mobile-video-container {
+            display: block; /* Show on mobile */
+        }
+        .desktop-video-container {
+            display: none; /* Hide on mobile */
+        }
+    }
+</style>
