@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Crowns</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="video-fixed-wrapper">
+  <iframe 
+    src="https://www.kickstarter.com/projects/sumaingames/cosmic-crowns/widget/video.html" 
+    frameborder="0" 
+    scrolling="no" 
+    allowfullscreen>
+  </iframe>
+
+  <div class="button-container">
+    <a href="https://www.kickstarter.com/projects/sumaingames/cosmic-crowns?ref=8ox3zg" target="_blank" class="kickstarter-button">
+      Click Here To Buy Your<br>Cosmic Crowns at Kickstarter
+    </a>
+  </div>
+</div>
+
+<!-- Image Container (Desktop and Mobile Images) -->
+<div class="image-container">
+    <img src="WebsiteSGGamefound25.jpg" alt="Desktop Image" class="desktop-image">
+    <img src="MobileSGGamefound25.jpg" alt="Mobile Image" class="mobile-image">
+</div>
+
+<!-- Disclaimer Section -->
+<div class="disclaimer">
+    All rewards, products, and productions associated with Cosmic Crowns are contingent upon the successful launch of our Kickstarter campaign. Supporters will be updated regularly on the campaign’s progress.
+</div>
+
+</body>
+</html>
