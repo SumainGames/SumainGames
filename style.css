@@ -59,19 +59,3 @@ html, body {
         font-size: 0.8em;
     }
 }
-
-.video-fixed-wrapper {
-  width: 800px;
-  max-width: 100%;
-  margin: 40px auto;
-  position: relative;
-  aspect-ratio: 16 / 9;
-  text-align: center;
-}
-
-.video-fixed-wrapper iframe {
-  width: 100%;
-  height: 100%;
-  display: block;
-  border: none;
-}
