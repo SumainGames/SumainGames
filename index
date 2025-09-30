@@ -7,15 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<div class="video-fixed-wrapper">
-  <iframe 
-    src="https://www.kickstarter.com/projects/sumaingames/cosmic-crowns/widget/video.html" 
-    frameborder="0" 
-    scrolling="no" 
-    allowfullscreen>
-  </iframe>
-</div>
 
 <!-- Image Container (Desktop and Mobile Images) -->
 <div class="image-container">
