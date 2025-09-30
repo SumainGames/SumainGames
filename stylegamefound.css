@@ -75,26 +75,3 @@ html, body {
   display: block;
   border: none;
 }
-
-.button-container {
-  width: 100%;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.kickstarter-button {
-  background-color: #B2F2BB; /* pastel green */
-  color: black;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1.2em;
-  text-align: center;
-  text-decoration: none;
-  padding: 15px 25px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 800px;
-  box-sizing: border-box;
-  display: inline-block;
-}
