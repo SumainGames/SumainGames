@@ -43,53 +43,6 @@ html, body {
     }
 }
 
-/* Email strip at top */
-.email-strip {
-    background-color: #000;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-    z-index: 10;  /* Ensure it's above images */
-}
-
-.email-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.signup-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 20px;
-}
-
-/* Email input box and join button */
-.email-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.email-form input {
-    padding: 10px;
-    width: 60%;
-    font-size: 1em;
-    margin-right: 10px;
-    border-radius: 5px;
-    border: none;
-}
-
-.email-form button {
-    padding: 10px 20px;
-    background-color: #4CAF50; /* Bright green */
-    color: white;
-    font-size: 1em;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-
 /* Disclaimer section */
 .disclaimer {
     text-align: center;
@@ -102,23 +55,10 @@ html, body {
 
 /* Mobile view adjustments */
 @media screen and (max-width: 768px) {
-    .signup-title {
-        font-size: 1.2em;
-    }
-
-    .email-form input {
-        width: 70%; /* Adjust width for mobile */
-    }
-
-    .email-form button {
-        font-size: 0.9em;
-    }
-
     .disclaimer {
         font-size: 0.8em;
     }
-    
-
+}
 
 .video-fixed-wrapper {
   width: 800px;
