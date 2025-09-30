@@ -15,7 +15,7 @@ html, body {
 
 /* Image settings - Always scale to fit the screen width */
 .image-container {
-    position: relative;
+    position: relative; /* Reference for absolute button positioning */
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -33,13 +33,46 @@ html, body {
     height: auto;
 }
 
-/* Mobile version */
+/* Button positioned over image */
+.buy-button {
+    position: absolute;
+    top: 55%;   /* Adjust this to position vertically over white banner */
+    left: 50%;  /* Center horizontally */
+    transform: translate(-50%, -50%);
+    
+    background-color: black;       /* Square black background */
+    color: white;                  /* White text */
+    font-family: Arial, sans-serif;
+    font-weight: bold;             /* Bold text */
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 30px 30px;            /* Square-ish size */
+    border-radius: 0;              /* Square corners */
+    text-align: center;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.buy-button:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Mobile version adjustments */
 @media screen and (max-width: 768px) {
     .desktop-image {
         display: none;
     }
     .mobile-image {
         display: block;
+    }
+
+    .buy-button {
+        font-size: 1.2em;
+        padding: 20px 20px;
+    }
+
+    .disclaimer {
+        font-size: 0.8em;
     }
 }
 
@@ -51,11 +84,4 @@ html, body {
     margin-top: 50px;
     padding: 10px;
     background-color: #222;
-}
-
-/* Mobile view adjustments */
-@media screen and (max-width: 768px) {
-    .disclaimer {
-        font-size: 0.8em;
-    }
 }
