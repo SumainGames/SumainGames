@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Ensure full width */
+/* Full page */
 html, body {
     width: 100%;
     height: 100%;
@@ -13,76 +13,62 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-/* Image settings - Always scale to fit the screen width */
+/* Image container */
 .image-container {
-    position: relative; /* Reference for absolute button positioning */
+    position: relative;
     width: 100%;
     height: auto;
     overflow: hidden;
+    text-align: center; /* Centers buttons horizontally */
 }
 
+/* Background images */
 .desktop-image {
     display: block;
     width: 100%;
     height: auto;
 }
-
 .mobile-image {
     display: none;
     width: 100%;
     height: auto;
 }
 
-/* Buy Button Positioned Over Image */
+/* Buy button (default hidden until correct version shows) */
 .buy-button {
-    position: absolute;
-    top: 65%;       /* Desktop image white banner center */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    font-size: 1.5em;
-    text-decoration: none;
-    padding: 30px 30px;
-    border-radius: 0;
-    text-align: center;
-    display: inline-block;
-    transition: transform 0.2s;
+    display: block;
+    margin: 20px auto;  /* centers under background image */
+    width: auto;
+    max-width: 250px;   /* adjust button size */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
 }
-
 .buy-button:hover {
-    transform: translate(-50%, -50%) scale(1.05);
+    transform: scale(1.05);
+    filter: brightness(90%);
 }
 
-/* Disclaimer Section */
+/* Mobile view */
+@media screen and (max-width: 768px) {
+    .desktop-image, .desktop-button {
+        display: none;
+    }
+    .mobile-image, .mobile-button {
+        display: block;
+    }
+}
+
+/* Disclaimer */
 .disclaimer {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 0.9em;
     margin-top: 50px;
     padding: 10px;
-    background-color: #222;
+    background-color: #FFFFFF;
 }
-
-/* Mobile version adjustments */
 @media screen and (max-width: 768px) {
-    .desktop-image {
-        display: none;
-    }
-    .mobile-image {
-        display: block;
-    }
-
-    .buy-button {
-        top: 60%;       /* Mobile image white banner center */
-        font-size: 1.2em;
-        padding: 20px 20px;
-    }
-
     .disclaimer {
         font-size: 0.8em;
     }
