@@ -23,26 +23,24 @@ body, html {
     width: 100%;
 }
 
-/* Buy Button (image as button) */
+/* Buy Button (image as button) - aligned inside white banner */
 .buy-button {
     position: absolute;
     left: 50%;
-    top: 80%; /* Adjust this to move button up/down */
+    top: 50%;                   /* roughly center of white banner */
     transform: translate(-50%, -50%);
     display: inline-block;
+    z-index: 50;
+    pointer-events: auto;
 }
 
-.buy-button img {
-    width: 220px; /* Resize button image */
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease;
+/* Adjust mobile separately if needed */
+@media screen and (max-width: 768px) {
+    .buy-button {
+        top: 50%;               /* adjust if white banner is at different vertical spot on mobile */
+        transform: translate(-50%, -50%);
+    }
 }
-
-.buy-button img:hover {
-    transform: scale(1.05); /* Subtle hover effect */
-}
-
 /* Disclaimer Styling */
 .disclaimer {
     font-size: 14px;
@@ -67,3 +65,4 @@ body, html {
         top: 75%; /* Adjust for mobile positioning */
     }
 }
+
