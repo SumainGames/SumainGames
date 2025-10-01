@@ -32,24 +32,48 @@ body, html {
     pointer-events: auto;
 }
 
+}
+
+/* Buy Button (image as button) */
+.buy-button {
+    position: absolute;
+    left: 50%;
+    top: 55%; /* Adjust this percentage until it sits perfectly in the white banner */
+    transform: translate(-50%, -50%);
+    z-index: 50;
+}
+
 .buy-button img {
-    width: 8vw;       /* desktop scaling */
-    max-width: 220px;
+    width: 8vw;       /* scales with screen width */
+    max-width: 220px; /* cap size on big screens */
     height: auto;
 }
 
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
     .buy-button {
-        top: 55%;       /* move up on mobile */
+        top: 50%;      /* adjust for mobile white banner position */
     }
 
     .buy-button img {
-        width: 12vw;    /* mobile scaling */
+        width: 12vw;   /* mobile scaling */
         max-width: 180px;
-        height: auto;
     }
 }
+
+/* Desktop / Mobile Images */
+.desktop-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.mobile-image {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+    
 }
 
 /* Disclaimer Styling */
@@ -76,6 +100,7 @@ body, html {
         top: 75%; /* Adjust for mobile positioning */
     }
 }
+
 
 
 
