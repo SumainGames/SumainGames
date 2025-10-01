@@ -41,14 +41,14 @@ html, body {
 .buy-button {
     position: absolute;
     left: 50%;                  
-    top: 55%;                   /* moved 5% up from previous 55% */
+    top: 50%;                   /* moved 5% up from previous 55% */
     transform: translate(-50%, -50%);
     z-index: 50;
     display: inline-block;
 }
 
 .buy-button img {
-    width: 95vw;                /* bigger scaling */
+    width: 100vw;                /* bigger scaling */
     max-width: 300px;           /* prevent oversize on large screens */
     height: auto;
     cursor: pointer;
@@ -62,7 +62,7 @@ html, body {
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
     .buy-button {
-        top: 65%;               /* moved 5% up from previous 50% */
+        top: 60%;               /* moved 5% up from previous 50% */
     }
 
     .buy-button img {
@@ -88,6 +88,7 @@ html, body {
         font-size: 0.8em;
     }
 }
+
 
 
 
