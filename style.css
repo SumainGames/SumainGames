@@ -22,18 +22,31 @@ body, html {
     display: none;
     width: 100%;
 }
+.buy-button {
+    position: absolute;
+    left: 50%;
+    top: 62%;                  /* Adjust this so it sits inside the white banner */
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    z-index: 50;
+    pointer-events: auto;
+}
 
 .buy-button img {
-    width: 8vw;       /* scales with viewport width */
-    max-width: 220px; /* optional cap if you want to limit oversize */
-    height: auto;     /* maintain aspect ratio */
+    width: 8vw;       /* desktop scaling */
+    max-width: 220px;
+    height: auto;
 }
 
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
+    .buy-button {
+        top: 58%;       /* adjust vertical position for mobile */
+    }
+
     .buy-button img {
-        width: 12vw;      /* slightly bigger proportionally on mobile */
-        max-width: 180px; /* optional cap */
+        width: 12vw;      /* mobile scaling */
+        max-width: 180px;
         height: auto;
     }
 }
@@ -62,5 +75,6 @@ body, html {
         top: 75%; /* Adjust for mobile positioning */
     }
 }
+
 
 
