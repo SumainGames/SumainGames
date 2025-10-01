@@ -40,34 +40,34 @@ html, body {
 /* Buy Button (image as button) */
 .buy-button {
     position: absolute;
-    left: 50%;                  /* center horizontally */
-    top: 55%;                   /* adjust to sit on white banner */
+    left: 50%;                  
+    top: 50%;                   /* moved 5% up from previous 55% */
     transform: translate(-50%, -50%);
     z-index: 50;
     display: inline-block;
 }
 
 .buy-button img {
-    width: 8vw;                 /* scales with viewport */
-    max-width: 220px;           /* prevent oversize on large screens */
+    width: 15vw;                /* bigger scaling */
+    max-width: 300px;           /* prevent oversize on large screens */
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease;
 }
 
 .buy-button img:hover {
-    transform: scale(1.05);     /* subtle hover effect */
+    transform: scale(1.05);     
 }
 
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
     .buy-button {
-        top: 50%;               /* adjust vertical position for mobile white banner */
+        top: 45%;               /* moved 5% up from previous 50% */
     }
 
     .buy-button img {
-        width: 12vw;            /* mobile scaling */
-        max-width: 180px;
+        width: 25vw;            /* bigger scaling for mobile */
+        max-width: 220px;
     }
 }
 
