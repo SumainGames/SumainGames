@@ -1,64 +1,22 @@
-/* Reset default margins */
-body, html {
+/* Reset defaults */
+* {
     margin: 0;
     padding: 0;
-    background: #fff; /* White background */
+    box-sizing: border-box;
 }
 
-/* Image Container */
+/* Ensure full width */
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for background image */
 .image-container {
     position: relative;
     width: 100%;
-    text-align: center;
-}
-
-/* Desktop Image */
-.desktop-image {
-    display: block;
-    width: 100%;
-}
-
-.mobile-image {
-    display: none;
-    width: 100%;
-
-    .buy-button {
-    position: absolute;
-    left: 50%;
-    top: 58%;                /* move up from previous 62% */
-    transform: translate(-50%, -50%);
-    display: inline-block;
-    z-index: 50;
-    pointer-events: auto;
-}
-
-}
-
-/* Buy Button (image as button) */
-.buy-button {
-    position: absolute;
-    left: 50%;
-    top: 55%; /* Adjust this percentage until it sits perfectly in the white banner */
-    transform: translate(-50%, -50%);
-    z-index: 50;
-}
-
-.buy-button img {
-    width: 8vw;       /* scales with screen width */
-    max-width: 220px; /* cap size on big screens */
-    height: auto;
-}
-
-/* Mobile adjustments */
-@media screen and (max-width: 768px) {
-    .buy-button {
-        top: 50%;      /* adjust for mobile white banner position */
-    }
-
-    .buy-button img {
-        width: 12vw;   /* mobile scaling */
-        max-width: 180px;
-    }
 }
 
 /* Desktop / Mobile Images */
@@ -73,35 +31,60 @@ body, html {
     width: 100%;
     height: auto;
 }
-    
+
+@media screen and (max-width: 768px) {
+    .desktop-image { display: none; }
+    .mobile-image { display: block; }
 }
 
-/* Disclaimer Styling */
-.disclaimer {
-    font-size: 14px;
-    color: #000; /* Black text */
-    background: #ffffff; /* White background */
-    padding: 15px;
-    text-align: center;
+/* Buy Button (image as button) */
+.buy-button {
+    position: absolute;
+    left: 50%;                  /* center horizontally */
+    top: 55%;                   /* adjust to sit on white banner */
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    display: inline-block;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .desktop-image {
-        display: none;
-    }
-    .mobile-image {
-        display: block;
-    }
-    .buy-button img {
-        width: 180px; /* smaller on mobile */
-    }
+.buy-button img {
+    width: 8vw;                 /* scales with viewport */
+    max-width: 220px;           /* prevent oversize on large screens */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.buy-button img:hover {
+    transform: scale(1.05);     /* subtle hover effect */
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
     .buy-button {
-        top: 75%; /* Adjust for mobile positioning */
+        top: 50%;               /* adjust vertical position for mobile white banner */
+    }
+
+    .buy-button img {
+        width: 12vw;            /* mobile scaling */
+        max-width: 180px;
     }
 }
 
+/* Disclaimer section */
+.disclaimer {
+    text-align: center;
+    color: #fff;  /* white text for readability */
+    font-size: 0.9em;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #fff; /* white background */
+    color: black;           /* black text */
+}
 
-
-
-
+/* Mobile view adjustments */
+@media screen and (max-width: 768px) {
+    .disclaimer {
+        font-size: 0.8em;
+    }
+}
