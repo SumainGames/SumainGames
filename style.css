@@ -21,11 +21,11 @@ body, html {
 .mobile-image {
     display: none;
     width: 100%;
-}
-.buy-button {
+
+    .buy-button {
     position: absolute;
     left: 50%;
-    top: 62%;                  /* Adjust this so it sits inside the white banner */
+    top: 58%;                /* move up from previous 62% */
     transform: translate(-50%, -50%);
     display: inline-block;
     z-index: 50;
@@ -41,14 +41,15 @@ body, html {
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
     .buy-button {
-        top: 58%;       /* adjust vertical position for mobile */
+        top: 55%;       /* move up on mobile */
     }
 
     .buy-button img {
-        width: 12vw;      /* mobile scaling */
+        width: 12vw;    /* mobile scaling */
         max-width: 180px;
         height: auto;
     }
+}
 }
 
 /* Disclaimer Styling */
@@ -75,6 +76,7 @@ body, html {
         top: 75%; /* Adjust for mobile positioning */
     }
 }
+
 
 
 
