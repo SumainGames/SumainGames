@@ -48,7 +48,7 @@ html, body {
 
 .buy-button img {
     width: 300vw;                /* bigger scaling */
-    max-width: 600px;           /* prevent oversize on large screens */
+    max-width: 350px;           /* prevent oversize on large screens */
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease;
@@ -87,6 +87,7 @@ html, body {
         font-size: 0.8em;
     }
 }
+
 
 
 
