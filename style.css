@@ -48,8 +48,8 @@ html, body {
 }
 
 .buy-button img {
-    width: 300vw;                /* bigger scaling */
-    max-width: 350px;           /* prevent oversize on large screens */
+    width: 100vw;                /* bigger scaling */
+    max-width: 500px;           /* prevent oversize on large screens */
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease;
@@ -66,7 +66,7 @@ html, body {
     }
 
     .buy-button img {
-        width: 300vw;            /* bigger scaling for mobile */
+        width: 100vw;            /* bigger scaling for mobile */
         max-width: 220px;
     }
 }
@@ -88,6 +88,7 @@ html, body {
         font-size: 0.8em;
     }
 }
+
 
 
 
