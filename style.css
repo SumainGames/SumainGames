@@ -66,8 +66,8 @@ html, body {
     }
 
     .buy-button img {
-        width: 250vw;            /* bigger scaling for mobile */
-        max-width: 400px;
+        width: 100vw;            /* bigger scaling for mobile */
+        max-width: 280px;
     }
 }
 
@@ -88,6 +88,7 @@ html, body {
         font-size: 0.8em;
     }
 }
+
 
 
 
