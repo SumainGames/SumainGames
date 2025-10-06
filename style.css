@@ -113,6 +113,21 @@ html, body {
     opacity: 0.8;
 }
 
+/* Social Media Icons - Mobile Adjustments */
+@media screen and (max-width: 768px) {
+    .social-icons {
+        top: 15px;          /* move closer to top on mobile */
+        right: 10px;        /* move closer to right edge */
+        gap: 6px;           /* smaller gap between icons */
+    }
+
+    .social-icons img {
+        width: 28px;        /* smaller icons for mobile */
+        height: 28px;
+    }
+}
+
+
 
 
 
