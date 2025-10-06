@@ -93,7 +93,7 @@ html, body {
 .social-icons {
     position: absolute;       /* or fixed if you want it to stay on scroll */
     top: 45px;
-    right: 20px;
+    right: 60px;          /* move left by increasing right distance */
     display: flex;
     gap: 15px;
     align-items: center;
@@ -116,7 +116,7 @@ html, body {
 /* Social Media Icons - Mobile Adjustments */
 @media screen and (max-width: 768px) {
     .social-icons {
-        top: 30px;      /* move down on mobile */
+        top: 25px;      /* move down on mobile */
         right: 30px;    /* move left by decreasing distance from right edge */
         gap: 10px;       /* space between icons */
     }
@@ -126,6 +126,7 @@ html, body {
         height: 28px;
     }
 }
+
 
 
 
