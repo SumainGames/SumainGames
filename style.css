@@ -116,9 +116,9 @@ html, body {
 /* Social Media Icons - Mobile Adjustments */
 @media screen and (max-width: 768px) {
     .social-icons {
-        top: 15px;          /* move closer to top on mobile */
-        right: 10px;        /* move closer to right edge */
-        gap: 6px;           /* smaller gap between icons */
+        top: 40px;      /* move down on mobile */
+        right: 30px;    /* move left by decreasing distance from right edge */
+        gap: 10px;       /* space between icons */
     }
 
     .social-icons img {
@@ -126,6 +126,7 @@ html, body {
         height: 28px;
     }
 }
+
 
 
 
