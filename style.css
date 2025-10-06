@@ -62,7 +62,7 @@ html, body {
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
     .buy-button {
-        top: 55%;               /* moved 5% up from previous 50% */
+        top: 52%;               /* moved 5% up from previous 50% */
     }
 
     .buy-button img {
@@ -88,6 +88,7 @@ html, body {
         font-size: 0.8em;
     }
 }
+
 
 
 
