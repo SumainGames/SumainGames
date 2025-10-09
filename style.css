@@ -109,8 +109,8 @@ html, body {
 /* Social Media Icons */
 .social-icons {
   position: absolute;
-  top: 40px;             /* moved down from 20px */
-  right: 20px;
+  top: 50px;           /* slightly lower for large screens */
+  right: 60px;         /* moved left from edge */
   display: flex;
   gap: 10px;
   align-items: center;
@@ -133,8 +133,8 @@ html, body {
 /* Large desktop to smaller desktop */
 @media screen and (max-width: 1400px) {
   .social-icons {
-    top: 36px;   /* moved down */
-    right: 18px;
+    top: 46px;       /* slightly lower */
+    right: 55px;     /* move slightly left */
   }
 
   .social-icons img {
@@ -146,8 +146,8 @@ html, body {
 /* Medium screens (laptops, tablets) */
 @media screen and (max-width: 1200px) {
   .social-icons {
-    top: 32px;   /* moved down */
-    right: 16px;
+    top: 36px;       /* normal top */
+    right: 45px;     /* more left */
   }
 
   .social-icons img {
@@ -159,8 +159,8 @@ html, body {
 /* Smaller desktops */
 @media screen and (max-width: 1024px) {
   .social-icons {
-    top: 28px;   /* moved down */
-    right: 14px;
+    top: 32px;
+    right: 35px;     /* move left but keep proportional */
   }
 
   .social-icons img {
@@ -182,6 +182,7 @@ html, body {
         height: 28px;
     }
 }
+
 
 
 
