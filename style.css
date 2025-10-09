@@ -108,33 +108,46 @@ html, body {
 
 /* Social Media Icons */
 .social-icons {
-    position: absolute;
-    top: 45px;
-    right: 60px;          /* move left by increasing right distance */
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    z-index: 9999;            /* very high so it stays on top */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 1000;
 }
 
 .social-icons img {
-    width: 42px;          /* smaller size */
-    height: 42px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+  width: 36px;              /* slightly larger default */
+  height: 36px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease, width 0.2s ease, height 0.2s ease;
 }
 
 .social-icons img:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 
-/* Medium screens (like tablets, narrower browsers) */
-@media screen and (max-width: 1200px) {
+/* Large desktop to smaller desktop */
+@media screen and (max-width: 1400px) {
   .social-icons {
     top: 18px;
     right: 18px;
+  }
+
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Medium screens (laptops, tablets) */
+@media screen and (max-width: 1200px) {
+  .social-icons {
+    top: 16px;
+    right: 16px;
   }
 
   .social-icons img {
@@ -143,17 +156,18 @@ html, body {
   }
 }
 
-/* Smaller laptops */
+/* Smaller desktops */
 @media screen and (max-width: 1024px) {
   .social-icons {
-    top: 15px;
-    right: 15px;
+    top: 14px;
+    right: 14px;
   }
 
   .social-icons img {
-    width: 26px;
-    height: 26px;
+    width: 24px;
+    height: 24px;
   }
+}
 
 /* Social Media Icons - Mobile Adjustments */
 @media screen and (max-width: 768px) {
@@ -168,6 +182,7 @@ html, body {
         height: 28px;
     }
 }
+
 
 
 
