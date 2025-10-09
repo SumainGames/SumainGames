@@ -91,7 +91,7 @@ html, body {
 
 /* Social Media Icons */
 .social-icons {
-    position: fixed;       /* stays at top of screen */
+    position: absolute;
     top: 45px;
     right: 60px;          /* move left by increasing right distance */
     display: flex;
@@ -113,6 +113,30 @@ html, body {
     opacity: 0.8;
 }
 
+/* When screen gets smaller, make icons smaller and slightly lower */
+@media screen and (max-width: 1024px) {
+  .social-icons {
+    top: 15px;
+    right: 15px;
+  }
+
+  .social-icons img {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social-icons {
+    top: 12px;
+    right: 12px;
+  }
+
+  .social-icons img {
+    width: 22px;
+    height: 22px;
+  }
+
 /* Social Media Icons - Mobile Adjustments */
 @media screen and (max-width: 768px) {
     .social-icons {
@@ -126,6 +150,7 @@ html, body {
         height: 28px;
     }
 }
+
 
 
 
