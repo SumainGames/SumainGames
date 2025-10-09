@@ -48,7 +48,7 @@ html, body {
 }
 
 .buy-button img {
-  width: 70vw;              /* larger default size */
+  width: 80vw;              /* larger default size */
   max-width: 900px;         /* limit for very wide screens */
   min-width: 250px;         /* don’t shrink too much */
   height: auto;
@@ -168,6 +168,7 @@ html, body {
         height: 28px;
     }
 }
+
 
 
 
