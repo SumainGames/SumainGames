@@ -39,25 +39,43 @@ html, body {
 
 /* Buy Button (image as button) */
 .buy-button {
-    position: absolute;
-    left: 50%;                  
-    top: 50%;                   /* moved 5% up from previous 55% */
-    transform: translate(-50%, -50%);
-    z-index: 50;
-    display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  display: inline-block;
 }
 
 .buy-button img {
-    width: 200vw;                /* bigger scaling */
-    max-width: 1000px;           /* prevent oversize on large screens */
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease;
+  width: 40vw;              /* responsive size based on window width */
+  max-width: 500px;         /* never larger than 500px */
+  min-width: 200px;         /* never smaller than 200px */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
 .buy-button img:hover {
-    transform: scale(1.10);     
+  transform: scale(1.1);
 }
+
+/* Medium screen adjustment (tablets and smaller desktops) */
+@media screen and (max-width: 1200px) {
+  .buy-button img {
+    width: 45vw;
+    max-width: 400px;
+  }
+}
+
+/* Small screen adjustment (narrow browsers) */
+@media screen and (max-width: 1024px) {
+  .buy-button img {
+    width: 50vw;
+    max-width: 350px;
+  }
+}
+
 
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
@@ -151,6 +169,7 @@ html, body {
         height: 28px;
     }
 }
+
 
 
 
