@@ -48,9 +48,9 @@ html, body {
 }
 
 .buy-button img {
-  width: 40vw;              /* responsive size based on window width */
-  max-width: 500px;         /* never larger than 500px */
-  min-width: 200px;         /* never smaller than 200px */
+  width: 70vw;              /* larger default size */
+  max-width: 900px;         /* limit for very wide screens */
+  min-width: 250px;         /* don’t shrink too much */
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -60,22 +60,21 @@ html, body {
   transform: scale(1.1);
 }
 
-/* Medium screen adjustment (tablets and smaller desktops) */
+/* Medium screen adjustment */
 @media screen and (max-width: 1200px) {
   .buy-button img {
-    width: 45vw;
-    max-width: 400px;
+    width: 75vw;
+    max-width: 700px;
   }
 }
 
-/* Small screen adjustment (narrow browsers) */
+/* Smaller desktops */
 @media screen and (max-width: 1024px) {
   .buy-button img {
-    width: 50vw;
-    max-width: 350px;
+    width: 80vw;
+    max-width: 600px;
   }
 }
-
 
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
@@ -169,6 +168,7 @@ html, body {
         height: 28px;
     }
 }
+
 
 
 
