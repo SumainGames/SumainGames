@@ -113,7 +113,20 @@ html, body {
     opacity: 0.8;
 }
 
-/* When screen gets smaller, make icons smaller and slightly lower */
+/* Medium screens (like tablets, narrower browsers) */
+@media screen and (max-width: 1200px) {
+  .social-icons {
+    top: 18px;
+    right: 18px;
+  }
+
+  .social-icons img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Smaller laptops */
 @media screen and (max-width: 1024px) {
   .social-icons {
     top: 15px;
@@ -123,18 +136,6 @@ html, body {
   .social-icons img {
     width: 26px;
     height: 26px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .social-icons {
-    top: 12px;
-    right: 12px;
-  }
-
-  .social-icons img {
-    width: 22px;
-    height: 22px;
   }
 
 /* Social Media Icons - Mobile Adjustments */
@@ -150,6 +151,7 @@ html, body {
         height: 28px;
     }
 }
+
 
 
 
