@@ -186,7 +186,7 @@ html, body {
 .bottom-image {
   width: 100%;
   text-align: center;
-  margin: 80px 0;
+  margin: 60px 0;
 }
 
 .bottom-image img {
@@ -194,6 +194,7 @@ html, body {
   max-width: 1600px;
   height: auto;
 }
+
 
 
 
