@@ -237,7 +237,7 @@ html, body {
 .rules-french {
   position: absolute;
   top: 415%;        /* adjust vertical placement */
-  left: 40%;        /* adjust horizontal placement */
+  left: 50%;        /* adjust horizontal placement */
   transform: translate(-50%, -50%);
   z-index: 60;
 }
@@ -256,7 +256,7 @@ html, body {
 .rules-spanish {
   position: absolute;
   top: 415%;        /* adjust vertical placement */
-  left: 60%;        /* adjust horizontal placement */
+  left: 80%;        /* adjust horizontal placement */
   transform: translate(-50%, -50%);
   z-index: 60;
 }
@@ -271,6 +271,7 @@ html, body {
 .rules-spanish img:hover {
   transform: scale(1.05);
 }
+
 
 
 
