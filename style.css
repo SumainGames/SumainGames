@@ -183,6 +183,19 @@ html, body {
     }
 }
 
+.bottom-image {
+  width: 100%;
+  text-align: center;
+  margin: 80px 0;
+}
+
+.bottom-image img {
+  width: 100%;
+  max-width: 1600px;
+  height: auto;
+}
+
+
 
 
 
