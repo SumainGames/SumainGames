@@ -215,6 +215,24 @@ html, body {
   transform: scale(1.05);
 }
 
+.rules-italian {
+  position: absolute;
+  top: 340%;        /* adjust vertical placement */
+  left: 55%;        /* adjust horizontal placement */
+  transform: translate(-50%, -50%);
+  z-index: 60;
+}
+
+.rules-italian img {
+  width: 500px;     /* adjust button size */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.rules-italian img:hover {
+  transform: scale(1.05);
+}
 
 
 
