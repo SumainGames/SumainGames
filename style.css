@@ -195,6 +195,25 @@ html, body {
   height: auto;
 }
 
+.youtube-video {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.youtube-video img {
+  width: 400px;
+  max-width: 90%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.youtube-video img:hover {
+  transform: scale(1.05);
+}
+
+
 
 
 
