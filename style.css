@@ -195,23 +195,26 @@ html, body {
   height: auto;
 }
 
-.youtube-video {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 60px;
+.video-overlay {
+  position: absolute;
+  top: 40%;             /* adjust vertical position */
+  left: 50%;            /* center horizontally */
+  transform: translate(-50%, -50%);
+  z-index: 60;          /* make sure it’s above the background but below icons if needed */
 }
 
-.youtube-video img {
-  width: 400px;
-  max-width: 90%;
+.video-overlay img {
+  width: 400px;         /* thumbnail size */
+  max-width: 80%;
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
-.youtube-video img:hover {
+.video-overlay img:hover {
   transform: scale(1.05);
 }
+
 
 
 
