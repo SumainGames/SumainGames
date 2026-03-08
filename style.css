@@ -234,6 +234,45 @@ html, body {
   transform: scale(1.05);
 }
 
+.rules-french {
+  position: absolute;
+  top: 415%;        /* adjust vertical placement */
+  left: 40%;        /* adjust horizontal placement */
+  transform: translate(-50%, -50%);
+  z-index: 60;
+}
+
+.rules-french img {
+  width: 400px;     /* adjust button size */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.rules-french img:hover {
+  transform: scale(1.05);
+}
+
+.rules-spanish {
+  position: absolute;
+  top: 415%;        /* adjust vertical placement */
+  left: 60%;        /* adjust horizontal placement */
+  transform: translate(-50%, -50%);
+  z-index: 60;
+}
+
+.rules-spanish img {
+  width: 400px;     /* adjust button size */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.rules-spanish img:hover {
+  transform: scale(1.05);
+}
+
+
 
 
 
