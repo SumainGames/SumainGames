@@ -197,14 +197,14 @@ html, body {
 
 .video-overlay {
   position: absolute;
-  top: 310%;             /* adjust vertical position */
-  left: 50%;            /* center horizontally */
+  top: 320%;             /* adjust vertical position */
+  left: 55%;            /* center horizontally */
   transform: translate(-50%, -50%);
   z-index: 60;          /* make sure it’s above the background but below icons if needed */
 }
 
 .video-overlay img {
-  width: 900px;         /* thumbnail size */
+  width: 1000px;         /* thumbnail size */
   max-width: 80%;
   height: auto;
   cursor: pointer;
@@ -214,6 +214,7 @@ html, body {
 .video-overlay img:hover {
   transform: scale(1.05);
 }
+
 
 
 
