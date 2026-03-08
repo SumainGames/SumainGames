@@ -217,14 +217,14 @@ html, body {
 
 .rules-italian {
   position: absolute;
-  top: 340%;        /* adjust vertical placement */
-  left: 55%;        /* adjust horizontal placement */
+  top: 370%;        /* adjust vertical placement */
+  left: 40%;        /* adjust horizontal placement */
   transform: translate(-50%, -50%);
   z-index: 60;
 }
 
 .rules-italian img {
-  width: 500px;     /* adjust button size */
+  width: 300px;     /* adjust button size */
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -233,6 +233,7 @@ html, body {
 .rules-italian img:hover {
   transform: scale(1.05);
 }
+
 
 
 
