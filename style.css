@@ -205,7 +205,7 @@ html, body {
 
 .video-overlay img {
   width: 1300px;         /* thumbnail size */
-  max-width: 80%;
+  max-width: 1300px;
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -214,6 +214,7 @@ html, body {
 .video-overlay img:hover {
   transform: scale(1.05);
 }
+
 
 
 
