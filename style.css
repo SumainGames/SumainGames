@@ -217,7 +217,7 @@ html, body {
 
 .rules-italian {
   position: absolute;
-  top: 400%;        /* adjust vertical placement */
+  top: 430%;        /* adjust vertical placement */
   left: 20%;        /* adjust horizontal placement */
   transform: translate(-50%, -50%);
   z-index: 60;
@@ -233,6 +233,7 @@ html, body {
 .rules-italian img:hover {
   transform: scale(1.05);
 }
+
 
 
 
