@@ -236,7 +236,7 @@ html, body {
 
 .rules-container {
   position: absolute;
-  top: 350%;           /* adjust vertical placement */
+  top: 380%;           /* adjust vertical placement */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -259,18 +259,19 @@ html, body {
 
   .rules-container {
     position: absolute;
-    top: 190%;      /* adjust this line */
+    top: 240%;      /* adjust this line */
     left: 50%;
     transform: translateX(-50%);
     gap: 10px;
   }
 
   .rules-container img {
-    width: 30%;
+    width: 60%;
     max-width: 120px;
   }
 
 }
+
 
 
 
