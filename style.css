@@ -260,9 +260,9 @@ html, body {
   .rules-container {
     position: absolute;
     top: 210%;      /* adjust this line */
-    left: 50%;
+    left: 40%;
     transform: translateX(-50%);
-    gap: 60px;
+    gap: 80px;
   }
 
   .rules-container img {
@@ -277,7 +277,7 @@ html, body {
 
   #curator-feed-default-feed-layout .crt-feed {
     display: grid !important;
-    grid-template-columns: 1fr 1fr !important; /* 2 posts per row */
+    grid-template-columns: 1fr 1fr 1fr !important;
     gap: 10px !important;
   }
 
@@ -286,6 +286,7 @@ html, body {
   }
 
 }
+
 
 
 
