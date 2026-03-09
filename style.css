@@ -79,7 +79,7 @@ html, body {
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
     .buy-button {
-        top: 45%;               /* moved 5% up from previous 50% */
+        top: 42%;               /* moved 5% up from previous 50% */
     }
 
     .buy-button img {
@@ -219,7 +219,7 @@ html, body {
 
   .video-overlay {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: auto;
     transform: none;
     text-align: center;
@@ -227,7 +227,7 @@ html, body {
   }
 
   .video-overlay img {
-    width: 90%;
+    width: 50%;
     max-width: 500px;
     height: auto;
   }
@@ -309,6 +309,7 @@ html, body {
   }
 
 }
+
 
 
 
