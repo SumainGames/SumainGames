@@ -219,7 +219,7 @@ html, body {
 
   .video-overlay {
     position: absolute;
-    top: 160%;
+    top: 180%;
     left: auto;
     transform: none;
     text-align: center;
@@ -308,10 +308,6 @@ html, body {
     height: auto;
   }
 
-}
-
-@media screen and (max-width: 768px) {
-
   .rules-french {
     position: absolute;
     top: 210%;
@@ -326,10 +322,6 @@ html, body {
     max-width: 400px;
     height: auto;
   }
-
-}
-
-@media screen and (max-width: 768px) {
 
   .rules-spanish {
     position: absolute;
@@ -347,6 +339,7 @@ html, body {
   }
 
 }
+
 
 
 
