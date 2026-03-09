@@ -240,12 +240,12 @@ html, body {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 20px;
+  gap: 40px;
   z-index: 60;
 }
 
 .rules-container img {
-  width: 320px;        /* button size */
+  width: 340px;        /* button size */
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -262,15 +262,16 @@ html, body {
     top: 210%;      /* adjust this line */
     left: 50%;
     transform: translateX(-50%);
-    gap: 10px;
+    gap: 40px;
   }
 
   .rules-container img {
-    width: 150%;
+    width: 170%;
     max-width: 120px;
   }
 
 }
+
 
 
 
