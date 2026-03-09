@@ -219,7 +219,7 @@ html, body {
 
   .video-overlay {
     position: absolute;
-    top: 180%;
+    top: 170%;
     left: auto;
     transform: none;
     text-align: center;
@@ -293,52 +293,21 @@ html, body {
 
 @media screen and (max-width: 768px) {
 
-  .rules-italian {
-    position: absolute;
-    top: 210%;
-    left: 20%;
-    transform: none;
-    text-align: center;
-    margin: 20px auto;
+  .rules-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
   }
 
-  .rules-italian img {
+  .rules-container img {
     width: 30%;
-    max-width: 400px;
-    height: auto;
-  }
-
-  .rules-french {
-    position: absolute;
-    top: 210%;
-    left: 40%;
-    transform: none;
-    text-align: center;
-    margin: 20px auto;
-  }
-
-  .rules-french img {
-    width: 30%;
-    max-width: 400px;
-    height: auto;
-  }
-
-  .rules-spanish {
-    position: absolute;
-    top: 210%;
-    left: 60%;
-    transform: none;
-    text-align: center;
-    margin: 20px auto;
-  }
-
-  .rules-spanish img {
-    width: 30%;
-    max-width: 400px;
+    max-width: 120px;
     height: auto;
   }
 
 }
+
 
 
 
