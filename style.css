@@ -236,7 +236,7 @@ html, body {
 
 .rules-container {
   position: absolute;
-  top: 380%;           /* adjust vertical placement */
+  top: 420%;           /* adjust vertical placement */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -245,7 +245,7 @@ html, body {
 }
 
 .rules-container img {
-  width: 250px;        /* button size */
+  width: 300px;        /* button size */
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -259,18 +259,19 @@ html, body {
 
   .rules-container {
     position: absolute;
-    top: 240%;      /* adjust this line */
+    top: 200%;      /* adjust this line */
     left: 50%;
     transform: translateX(-50%);
     gap: 10px;
   }
 
   .rules-container img {
-    width: 60%;
+    width: 100%;
     max-width: 120px;
   }
 
 }
+
 
 
 
