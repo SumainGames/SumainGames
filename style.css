@@ -79,7 +79,7 @@ html, body {
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
     .buy-button {
-        top: 42%;               /* moved 5% up from previous 50% */
+        top: 43%;               /* moved 5% up from previous 50% */
     }
 
     .buy-button img {
@@ -219,7 +219,7 @@ html, body {
 
   .video-overlay {
     position: absolute;
-    top: 80%;
+    top: 140%;
     left: auto;
     transform: none;
     text-align: center;
@@ -294,8 +294,8 @@ html, body {
 @media screen and (max-width: 768px) {
 
   .rules-italian {
-    position: relative;
-    top: auto;
+    position: absolute;
+    top: 200%;
     left: auto;
     transform: none;
     text-align: center;
@@ -303,12 +303,13 @@ html, body {
   }
 
   .rules-italian img {
-    width: 80%;
+    width: 30%;
     max-width: 400px;
     height: auto;
   }
 
 }
+
 
 
 
