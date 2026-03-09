@@ -234,60 +234,24 @@ html, body {
 
 }
 
-.rules-italian {
+.rules-container {
   position: absolute;
-  top: 415%;        /* adjust vertical placement */
-  left: 20%;        /* adjust horizontal placement */
-  transform: translate(-50%, -50%);
+  top: 330%;           /* adjust vertical placement */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
   z-index: 60;
 }
 
-.rules-italian img {
-  width: 400px;     /* adjust button size */
+.rules-container img {
+  width: 220px;        /* button size */
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
-.rules-italian img:hover {
-  transform: scale(1.05);
-}
-
-.rules-french {
-  position: absolute;
-  top: 415%;        /* adjust vertical placement */
-  left: 50%;        /* adjust horizontal placement */
-  transform: translate(-50%, -50%);
-  z-index: 60;
-}
-
-.rules-french img {
-  width: 400px;     /* adjust button size */
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.rules-french img:hover {
-  transform: scale(1.05);
-}
-
-.rules-spanish {
-  position: absolute;
-  top: 415%;        /* adjust vertical placement */
-  left: 80%;        /* adjust horizontal placement */
-  transform: translate(-50%, -50%);
-  z-index: 60;
-}
-
-.rules-spanish img {
-  width: 400px;     /* adjust button size */
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.rules-spanish img:hover {
+.rules-container img:hover {
   transform: scale(1.05);
 }
 
@@ -307,6 +271,7 @@ html, body {
   }
 
 }
+
 
 
 
