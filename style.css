@@ -79,7 +79,7 @@ html, body {
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
     .buy-button {
-        top: 53%;               /* moved 5% up from previous 50% */
+        top: 40%;               /* moved 5% up from previous 50% */
     }
 
     .buy-button img {
@@ -215,6 +215,25 @@ html, body {
   transform: scale(1.05);
 }
 
+@media screen and (max-width: 768px) {
+
+  .video-overlay {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    text-align: center;
+    margin: 30px auto;
+  }
+
+  .video-overlay img {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+  }
+
+}
+
 .rules-italian {
   position: absolute;
   top: 415%;        /* adjust vertical placement */
@@ -270,6 +289,25 @@ html, body {
 
 .rules-spanish img:hover {
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+
+  .rules-italian {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .rules-italian img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+  }
+
 }
 
 
