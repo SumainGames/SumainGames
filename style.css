@@ -267,10 +267,26 @@ html, body {
 
   .rules-container img {
     width: 200%;
-    max-width: 120px;
+    max-width: 200px;
   }
 
 }
+
+@media screen and (max-width: 768px) {
+
+  #curator-feed-default-feed-layout {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  /* force smaller grid posts */
+  #curator-feed-default-feed-layout .crt-feed-post {
+    width: 48% !important;
+    margin: 1% !important;
+  }
+
+}
+
 
 
 
