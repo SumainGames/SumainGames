@@ -219,7 +219,7 @@ html, body {
 
   .video-overlay {
     position: absolute;
-    top: 140%;
+    top: 160%;
     left: auto;
     transform: none;
     text-align: center;
@@ -295,8 +295,8 @@ html, body {
 
   .rules-italian {
     position: absolute;
-    top: 200%;
-    left: auto;
+    top: 210%;
+    left: 20%;
     transform: none;
     text-align: center;
     margin: 20px auto;
@@ -309,6 +309,45 @@ html, body {
   }
 
 }
+
+@media screen and (max-width: 768px) {
+
+  .rules-french {
+    position: absolute;
+    top: 210%;
+    left: 40%;
+    transform: none;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .rules-french img {
+    width: 30%;
+    max-width: 400px;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .rules-spanish {
+    position: absolute;
+    top: 210%;
+    left: 60%;
+    transform: none;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .rules-spanish img {
+    width: 30%;
+    max-width: 400px;
+    height: auto;
+  }
+
+}
+
 
 
 
