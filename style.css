@@ -266,26 +266,27 @@ html, body {
   }
 
   .rules-container img {
-    width: 200%;
-    max-width: 200px;
+    width: 400%;
+    max-width: 400px;
   }
 
 }
 
+/* Mobile fix for Curator feed */
 @media screen and (max-width: 768px) {
 
-  #curator-feed-default-feed-layout {
-    max-width: 100%;
-    padding: 0 10px;
+  #curator-feed-default-feed-layout .crt-feed {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important; /* 2 posts per row */
+    gap: 10px !important;
   }
 
-  /* force smaller grid posts */
   #curator-feed-default-feed-layout .crt-feed-post {
-    width: 48% !important;
-    margin: 1% !important;
+    width: 100% !important;
   }
 
 }
+
 
 
 
