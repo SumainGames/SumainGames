@@ -269,7 +269,7 @@ html, body {
   }
 
   .rules-container img {
-    width: calc(25% - 10px);   /* 4 images per row */
+    width: calc(25% - 4px);
     height: auto;
   }
 
