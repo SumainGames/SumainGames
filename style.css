@@ -259,15 +259,18 @@ html, body {
 
   .rules-container {
     position: absolute;
-    top: 210%;      /* adjust this line */
-    left: 40%;
+    top: 210%;
+    left: 50%;
     transform: translateX(-50%);
-    gap: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
   }
 
   .rules-container img {
-    width: 400%;
-    max-width: 400px;
+    width: calc(25% - 10px);   /* 4 images per row */
+    height: auto;
   }
 
 }
